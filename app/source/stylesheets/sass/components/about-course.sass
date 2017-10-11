@@ -1,0 +1,82 @@
+.about-course
+  padding: $section-padding-top 0 0
+  background: url("../images/content/about-course/bg.jpg") no-repeat bottom / cover
+  &__title
+    padding: 0 0 0 80px
+    margin-top: -7px
+    margin-left: 5px
+  &__title-2
+    margin-top: 93px
+    max-width: 100%
+    margin-bottom: 72px
+
+  &__videoWrap
+    margin-top: 92px
+  &__text
+    font-size: 14px
+    color: $gray
+    padding-left: 13px
+    letter-spacing: 0
+  &__column
+    width: 17.5%
+    margin-left: 2.5%
+    display: inline-block
+    vertical-align: top
+    margin-bottom: 52px
+    &:nth-child(1),
+    &:nth-child(6)
+      margin-left: 0
+    &--number
+      color: $pink
+      font-size: 50px
+      margin-bottom: 47px
+      font-family: $AgoraSlab-Thin
+    &--text
+      font-size: 14px
+      letter-spacing: 0
+      font-weight: normal
+      color: $gray
+      span
+        font-family: $AgoraSans-Bold
+  &__textInfo
+    font-size: 10px
+    color: $gray
+    margin-top: 20px
+    margin-left: -10px
+    font-family: $AgoraSans-Bold
+    letter-spacing: 0
+    span
+      font-weight: normal
+      font-size: 20px
+      line-height: 12px
+
+  .videoBlock
+    margin-top: 5px
+  .banner
+    margin-top: 94px
+
+  .before-line
+    &:before
+      left: -76px
+      top: -6px
+
+@media only screen and (max-width : 992px)
+  .about-course
+    &__videoBlock
+      margin-left: 45px
+    &__text
+      margin-top: 20px
+    .banner
+      margin-top: 40px
+    &__column
+      width: 46.5%
+      margin-left: 2.5% !important
+      &.before-line
+        &:before
+          display: none
+
+
+
+@media only screen and (max-width : 768px)
+  .about-course__title
+    padding: 0

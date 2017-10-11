@@ -1,0 +1,133 @@
+.webinar-see-also
+  padding: 79px 0 0
+  .inline-block
+    margin-right: 17px
+    margin-bottom: 35px
+  .banner
+    margin-top: 19px
+    margin-left: 140px
+    margin-bottom: 20px
+
+  .dateTime
+    color: $pink
+    margin-left: 10px
+.see-also
+  &__block
+    display: block
+    width: 100%
+    &:hover
+      .see-also
+        &__image
+          img
+            filter: grayscale(0%)
+  &__image
+    width: 220px
+    height: 140px
+    overflow: hidden
+    border-radius: 10px
+    img
+      width: 100%
+      height: 100%
+      filter: grayscale(100%)
+      transition: .2s
+  &__info
+    margin-top: 20px
+    font-size: 20px
+    letter-spacing: -1px
+    color: $blue
+    max-width: 220px
+
+.link
+  &__seeAll
+    position: absolute
+    top: 50%
+    right: 0
+    margin-top: -57px
+    margin-right: 22px
+    svg
+      fill: $blue
+    &:hover
+      svg
+        fill: darken($blue,10)
+.next__vebinar
+  font-size: 24px
+  line-height: 36px
+  color: $gray
+  letter-spacing: -1.2px
+  margin-top: 97px
+  margin-left: 2px
+  &:before
+    left: -79px
+    top: 7px
+.your-question
+  margin-top: 40px
+  .form-group
+    margin-left: -20px
+    max-width: 660px
+  textarea
+    display: block
+    width: 100%
+    min-height: 240px
+    box-shadow: 0 -10px 20px rgba(#cccccc,.3)
+    border: 0
+    box-sizing: border-box
+    padding: 17px 20px
+    font-family: $AgoraSans-Italic
+    font-size: 14px
+    color: #cccccc
+    border-radius: 10px
+
+    &::placeholder
+      font-family: $AgoraSans-Italic
+      font-size: 14px
+      color: #cccccc
+
+@media only screen and (max-width : 1290px)
+  .wrapper-right-webinar-column
+    margin: 0
+
+
+@media only screen and (max-width : 1024px)
+  .next__vebinar
+    margin: 97px auto 0
+    display: block
+    text-align: center
+  .your-question
+    .form-group
+      margin: 20px auto
+  .webinar-see-also .inline-block
+    width: 48%
+    margin: 20px 0
+  .see-also__image
+    margin: auto
+  .see-also__info
+    margin: 20px auto
+  .see-also__block
+    margin-left: auto
+    margin-right: auto
+  .link__seeAll
+    right: 50%
+    margin-right: -10px
+    top: 110%
+@media only screen and (max-width : 530px)
+  .webinar
+    .title--seeAlso
+      margin-left: 40px
+      &.left-dot:before
+        left: -40px
+    &-see-also
+      .inline-block
+        width: 100%
+      .banner
+        margin-left: 60px
+    &__doctorName
+      margin-left: 40px
+      &.left-dot:before
+        left: -40px
+  .link__seeAll
+    top: 103%
+  .your-question .form-group
+    margin-left: 0
+  .next__vebinar
+    font-size: 18px
+    line-height: 26px

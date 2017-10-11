@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Home page</title>
+    <meta name="author" content="asight.pro">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta name="description" content="Awesome site">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/icons/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/icons/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/icons/favicons/favicon-16x16.png">
+    <link rel="manifest" href="assets/images/icons/favicons/manifest.json">
+    <link rel="mask-icon" href="assets/images/icons/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="assets/images/icons/favicons/favicon.ico">
+    <meta name="msapplication-config" content="assets/images/icons/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.min.css">
+  </head>
+  <body>
+    <svg class="hidden">
+      <symbol id="video">
+        <path d="M1.289,10.013 L1.289,10.013 C0.542,10.012 -0.000,9.384 -0.000,8.518 L-0.000,2.480 C-0.000,1.613 0.542,0.984 1.289,0.984 C1.543,0.984 1.807,1.062 2.052,1.209 L7.220,4.284 C7.707,4.574 7.985,5.023 7.985,5.513 C7.985,5.995 7.715,6.433 7.245,6.713 L2.050,9.790 C1.807,9.935 1.543,10.013 1.289,10.013 ZM1.289,2.308 C1.257,2.308 1.208,2.308 1.208,2.480 L1.208,8.518 C1.208,8.690 1.257,8.690 1.289,8.690 C1.319,8.690 1.383,8.681 1.474,8.627 L6.669,5.550 C6.694,5.536 6.715,5.522 6.731,5.508 C6.709,5.490 6.680,5.469 6.643,5.447 L1.475,2.371 C1.383,2.316 1.319,2.308 1.289,2.308 Z"></path>
+      </symbol>
+    </svg>
+    <section class="left-side">
+      <div class="left-side-content">
+        <div class="left-side-content__logo"><a href="home.html"><img src="assets/images/icons/logo.png"></a></div>
+        <div class="left-side-content__text"><span>Онлайн школа думающих родителей</span></div>
+        <div class="wrapper_btnMenu">
+          <button class="btn btn__menu flex flex-align--center flex-justify--center"><span class="btn__menuLines"></span></button>
+          <div class="wrapper_btnMenu__menu">
+            <svg class="btn btn__closeMenu" width="14px" height="14px">
+              <path d="M8.414,6.999 L13.718,12.302 C14.108,12.693 14.108,13.326 13.718,13.716 C13.327,14.107 12.694,14.107 12.303,13.716 L7.000,8.413 L1.697,13.716 C1.306,14.107 0.673,14.107 0.282,13.716 C-0.108,13.326 -0.108,12.693 0.282,12.302 L5.586,6.999 L0.282,1.695 C-0.108,1.305 -0.108,0.672 0.282,0.282 C0.673,-0.109 1.306,-0.110 1.697,0.282 L7.000,5.584 L12.303,0.282 C12.694,-0.110 13.327,-0.109 13.718,0.282 C14.108,0.672 14.108,1.305 13.718,1.695 L8.414,6.999 Z"></path>
+            </svg>
+            <div class="wrapper_btnMenu__menu-links">
+              <ul>
+                <li><a class="wrapper_btnMenu__menu-link" href="video-tests.html">Видео-уроки и тесты</a></li>
+                <li><a class="wrapper_btnMenu__menu-link" href="webinar.html">Вебинары</a></li>
+                <li><a class="wrapper_btnMenu__menu-link" href="consultations.html">Консультации с врачом</a></li>
+                <li><a class="wrapper_btnMenu__menu-link" href="consultations-video.html">Чат</a></li>
+                <li><a class="wrapper_btnMenu__menu-link" href="useful.html">Полезные материалы</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="left-side__links">
+          <ul class="left-side__links--ul">
+            <li class="left-side__links--li"><a href="#">
+                <svg class="left-side__links--image" width="19px" height="20px">
+                  <path d="M18.989,17.069 C18.984,17.021 18.979,16.976 18.979,16.932 C18.979,15.080 16.459,12.931 12.748,12.113 C13.509,11.227 14.102,10.024 14.102,8.657 L14.102,5.009 C14.102,2.153 12.131,-0.001 9.505,-0.001 C6.880,-0.001 4.909,2.153 4.909,5.009 L4.909,8.657 C4.909,10.096 5.269,11.355 6.105,12.254 C2.935,13.088 0.072,14.911 0.072,16.955 C0.072,16.996 0.030,17.042 0.025,17.089 C-0.006,17.394 -0.096,18.110 0.710,18.537 C2.437,19.453 5.717,19.998 9.498,19.998 C13.278,19.998 16.563,19.453 18.291,18.537 C19.096,18.110 19.019,17.381 18.989,17.069 ZM6.134,8.657 L6.134,5.009 C6.134,2.875 7.579,1.265 9.505,1.265 C11.430,1.265 12.876,2.875 12.876,5.009 L12.876,8.657 C12.876,10.791 11.430,12.400 9.505,12.400 C7.579,12.400 6.134,10.791 6.134,8.657 ZM17.724,17.411 C16.186,18.225 13.030,18.733 9.489,18.733 C5.947,18.733 2.792,18.225 1.254,17.411 C1.226,17.396 1.208,17.383 1.199,17.381 C1.199,17.341 1.206,17.270 1.211,17.219 C1.220,17.128 1.228,17.039 1.228,16.955 C1.228,15.830 3.681,13.843 7.282,13.226 C7.868,13.506 8.522,13.667 9.226,13.667 C9.983,13.667 10.682,13.482 11.300,13.159 C15.118,13.689 17.750,15.773 17.750,16.932 C17.750,17.016 17.758,17.105 17.767,17.196 C17.773,17.263 17.783,17.362 17.789,17.368 C17.789,17.368 17.774,17.385 17.724,17.411 Z"></path>
+                </svg>
+                <svg class="left-side__links--image hoverImage" width="19px" height="20px">
+                  <path d="M18.989,17.068 C18.984,17.021 18.979,16.976 18.979,16.932 C18.979,15.080 16.459,12.931 12.748,12.113 C13.509,11.227 14.102,10.024 14.102,8.656 L14.102,5.009 C14.102,2.152 12.131,-0.001 9.505,-0.001 C6.880,-0.001 4.909,2.152 4.909,5.009 L4.909,8.656 C4.909,10.096 5.269,11.355 6.105,12.254 C2.935,13.088 0.072,14.911 0.072,16.954 C0.072,16.996 0.030,17.042 0.025,17.089 C-0.006,17.394 -0.096,18.110 0.710,18.537 C2.437,19.453 5.717,19.998 9.498,19.998 C13.278,19.998 16.563,19.453 18.291,18.536 C19.096,18.110 19.019,17.380 18.989,17.068 Z"></path>
+                </svg></a></li>
+            <li class="left-side__links--li"><a href="#">
+                <svg class="left-side__links--image" width="20px" height="18px">
+                  <path d="M14.687,1.284 C16.927,1.284 18.750,3.159 18.750,5.463 C18.750,6.026 18.595,6.600 18.336,6.999 C16.904,9.204 12.004,14.199 10.000,16.209 C7.996,14.199 3.097,9.205 1.664,6.999 C1.405,6.600 1.250,6.026 1.250,5.463 C1.250,3.159 3.072,1.284 5.312,1.284 C6.814,1.284 8.188,2.133 8.897,3.500 C9.115,3.918 9.539,4.178 10.000,4.178 C10.461,4.178 10.885,3.918 11.103,3.500 C11.812,2.133 13.186,1.284 14.687,1.284 M14.687,-0.001 C12.657,-0.001 10.894,1.171 10.000,2.892 C9.106,1.171 7.343,-0.001 5.312,-0.001 C2.378,-0.001 -0.000,2.445 -0.000,5.463 C-0.000,6.267 0.218,7.087 0.625,7.712 C2.529,10.643 10.000,17.999 10.000,17.999 C10.000,17.999 17.471,10.643 19.375,7.712 C19.782,7.087 20.000,6.267 20.000,5.463 C20.000,2.445 17.622,-0.001 14.687,-0.001 L14.687,-0.001 Z"></path>
+                </svg>
+                <svg class="left-side__links--image hoverImage" x="0px" y="0px" viewBox="0 0 492.719 492.719" style="enable-background:new 0 0 492.719 492.719;">
+                  <path d="M492.719,166.008c0-73.486-59.573-133.056-133.059-133.056c-47.985,0-89.891,25.484-113.302,63.569    c-23.408-38.085-65.332-63.569-113.316-63.569C59.556,32.952,0,92.522,0,166.008c0,40.009,17.729,75.803,45.671,100.178    l188.545,188.553c3.22,3.22,7.587,5.029,12.142,5.029c4.555,0,8.922-1.809,12.142-5.029l188.545-188.553    C474.988,241.811,492.719,206.017,492.719,166.008z" fill="#ff4972"></path>
+                </svg></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="dev-logo"><img class="dev-logo__img" src="assets/images/icons/footer/dev-logo.png">
+        <p class="dev-logo__text">Дизайн сайта</p><a class="dev-logo__link" href="#">www.fntw.ru</a>
+      </div>
+    </section>
+    <main class="custom-header-footer">
+      <section class="recording">
+        <div class="fullHeight" id="block-1">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <div class="flex flex-justify--right"><a href="#"><img src="assets/images/icons/logo-mama.png"></a></div>
+              </div>
+            </div>
+          </div>
+          <div class="container container__right container__right--left">
+            <div class="row">
+              <div class="col-12">
+                <div class="recording-slider owl-carousel">
+                  <div class="recording-sliderItem">
+                    <div class="recording-slider__wrap">
+                      <h2 class="title">
+                        Запишитесь на онлайн-курс
+                        по подготовке к родам
+                      </h2>
+                      <p class="recording-slider__text">и пройдите беременность<br>под руководством специалистов<br>с более чем 10-летним опытом</p>
+                    </div>
+                  </div>
+                  <div class="recording-sliderItem">
+                    <div class="recording-slider__wrap">
+                      <h2 class="title">Запишитесь на онлайн-курс</h2>
+                      <p class="recording-slider__text">
+                        и пройдите беременность
+                        под руководством специалистов
+                      </p>
+                    </div>
+                  </div>
+                  <div class="recording-sliderItem">
+                    <div class="recording-slider__wrap">
+                      <h2 class="title">Запишитесь на онлайн-курс</h2>
+                      <p class="recording-slider__text">
+                        и пройдите беременность
+                        под руководством специалистов
+                      </p>
+                    </div>
+                  </div>
+                  <div class="recording-sliderItem">
+                    <div class="recording-slider__wrap">
+                      <h2 class="title">Запишитесь на онлайн-курс</h2>
+                      <p class="recording-slider__text">
+                        и пройдите беременность
+                        под руководством специалистов
+                      </p>
+                    </div>
+                  </div>
+                  <div class="recording-sliderItem">
+                    <div class="recording-slider__wrap">
+                      <h2 class="title">Запишитесь на онлайн-курс</h2>
+                      <p class="recording-slider__text">
+                        и пройдите беременность
+                        под руководством специалистов
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="recording__footer">
+            <div class="container container__right container__right--left">
+              <div class="recording-slider__wrap">
+                <svg class="to-next" width="13px" height="23px">
+                  <path d="M6.528,22.856 C2.964,22.856 0.003,19.994 0.003,16.464 L0.003,6.389 C0.003,2.861 2.964,-0.002 6.528,-0.002 C10.092,-0.002 12.982,2.861 12.982,6.389 L12.982,16.464 C12.982,19.994 10.092,22.856 6.528,22.856 ZM11.539,6.389 C11.539,3.653 9.291,1.426 6.528,1.426 C3.765,1.426 1.445,3.653 1.445,6.389 L1.445,16.464 C1.445,19.200 3.765,21.426 6.528,21.426 C9.291,21.426 11.539,19.200 11.539,16.464 L11.539,6.389 ZM6.500,9.284 C6.102,9.284 5.779,8.964 5.779,8.569 L5.779,4.999 C5.779,4.604 6.102,4.284 6.500,4.284 C6.898,4.284 7.221,4.604 7.221,4.999 L7.221,8.569 C7.221,8.964 6.898,9.284 6.500,9.284 Z"></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container container__right container__right--left">
+          <div class="row">
+            <div class="col-12">
+              <div class="videoBlock recording__videoBlock">
+                <div class="videoBlock-image"><img src="assets/images/content/recording/videoBg.jpg"></div>
+                <button class="btn btn__video flex flex-align--center"><span class="btn__video--text">Видео</span><span class="btn__videoImg">
+                    <svg class="btn__videoImg--img" width="8px" height="10px">
+                      <path d="M1.289,10.013 L1.289,10.013 C0.542,10.012 -0.000,9.384 -0.000,8.518 L-0.000,2.480 C-0.000,1.613 0.542,0.984 1.289,0.984 C1.543,0.984 1.807,1.062 2.052,1.209 L7.220,4.284 C7.707,4.574 7.985,5.023 7.985,5.513 C7.985,5.995 7.715,6.433 7.245,6.713 L2.050,9.790 C1.807,9.935 1.543,10.013 1.289,10.013 ZM1.289,2.308 C1.257,2.308 1.208,2.308 1.208,2.480 L1.208,8.518 C1.208,8.690 1.257,8.690 1.289,8.690 C1.319,8.690 1.383,8.681 1.474,8.627 L6.669,5.550 C6.694,5.536 6.715,5.522 6.731,5.508 C6.709,5.490 6.680,5.469 6.643,5.447 L1.475,2.371 C1.383,2.316 1.319,2.308 1.289,2.308 Z"></path>
+                    </svg></span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container container__right container__right--right">
+          <div class="row blockInfo-wrapper">
+            <div class="col-4 col-md-6">
+              <div class="blockInfo">
+                <div class="blockInfo__img"><img src="assets/images/content/recording/video.png"></div>
+                <div class="blockInfo__text"><span>Более 20 часов увлекательных видеолекций с врачами-практиками</span></div>
+              </div>
+            </div>
+            <div class="col-4 col-md-6">
+              <div class="blockInfo">
+                <div class="blockInfo__img"><img src="assets/images/content/recording/video-2.png"></div>
+                <div class="blockInfo__text"><span>Самая важная информация о беременности и родах в первые месяцы жизни ребенка</span></div>
+              </div>
+            </div>
+            <div class="col-4 col-md-6">
+              <div class="blockInfo">
+                <div class="blockInfo__img"><img src="assets/images/content/recording/video-3.png"></div>
+                <div class="blockInfo__text"><span>Регулярная онлайн-поддержка в специальном чате.</span></div>
+              </div>
+            </div>
+            <div class="col-4 col-md-6">
+              <div class="blockInfo">
+                <div class="blockInfo__img"><img src="assets/images/content/recording/video-4.png"></div>
+                <div class="blockInfo__text"><span>Более 50 счастливых супружеских пар прошли обучение в нашем центре только в 2016 г</span></div>
+              </div>
+            </div>
+            <div class="col-4 col-md-6">
+              <div class="blockInfo">
+                <div class="blockInfo__img"><img src="assets/images/content/recording/video-5.png"></div>
+                <div class="blockInfo__text"><span>
+                    Удобная подача материала
+                    небольшими блоками,
+                    легкими для запоминания</span></div>
+              </div>
+            </div>
+            <div class="col-4 col-md-6">
+              <div class="blockInfo">
+                <div class="blockInfo__img"><img src="assets/images/content/recording/video-6.png"></div>
+                <div class="blockInfo__text"><span>
+                    Фундаментальный
+                    комплексный подход
+                    к подготовке к родам</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--btn-banner-->
+        <div class="container container__right container__right--none">
+          <div class="row banner">
+            <div class="col-4 col-sm-6">
+              <div class="banner__text flex flex-align--center text__right--78"><span>
+                  Запишитесь на бесплатную
+                  консультацию, чтобы получить
+                  подробную информацию о курсе</span></div>
+            </div>
+            <div class="col-8 col-sm-6">
+              <div class="banner__wrapper flex flex-align--center">
+                <div class="full-right"></div>
+                <h2 class="banner__title">Записаться<br>на обучение</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="information">
+        <div class="container container__right--right">
+          <div class="row">
+            <div class="col-12">
+              <h1 class="title information__title left-dot">
+                Вы получите на 100%
+                качественную информацию
+                о родах и уходу за малышом
+              </h1>
+              <button class="btn more-info more-info--information">Больше информации</button>
+            </div>
+          </div>
+          <div class="row information__text">
+            <div class="col-5 col-md-12">
+              <p class="information__text--left before-line before-line--gray">Акушерский центр «Название» при клинике «Естественная медицина» предлагает онлайн-курс по подготовке к родам, который содержит подробную практическую информацию, в том числе — о физиологическом течении беременности и родах. Мы расскажем вам о режиме питания, особенностях ежедневной активности и психологических реакциях женщины в этот период ее жизни, объясним, как будет развиваться ребенок, как ухаживать за ним.</p>
+            </div>
+            <div class="col-7 col-md-12">
+              <p class="information__text--right"><span class="information__text--tile">С курсом вы получите:</span></p>
+              <ul class="information__text--ul">
+                <li class="information__text--li">достоверную и исчерпывающую информацию о процессах, происходящих в организме женщины во время беременности и после родов;</li>
+                <li class="information__text--li">возможность сделать осознанный выбор оптимального для себя алгоритма родов;</li>
+                <li class="information__text--li">уверенность в том, что женщины рожают в любви с осознанием важности момента для ребенка и для себя.</li>
+                <li class="information__text--li">возможность просматривать лекции, записанные признанными практикующими специалистами;</li>
+                <li class="information__text--li">онлайн-поддержку в виде ответов на любые вопросы, заданные на нашем сайте;</li>
+                <li class="information__text--li">100% полезный контент, доступ к которому открывается после приобретения курса;</li>
+                <li class="information__text--li">развернутые ответы на Ваши вопросы, которые могут возникнуть в связи с беременностью, родами и уходом за младенцем;</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="free-webinar">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h2 class="title title--white">
+                Посмотрите бесплатный вебинар
+                от лучшего специалиста школы
+                и получите первые ценные советы
+              </h2>
+            </div>
+          </div>
+          <div class="row free-webinar__video-text">
+            <div class="col-5 col-md-12">
+              <p class="free-webinar__text before-line">
+                Вы прямо сейчас
+                можете бесплатно
+                ознакомиться с вебинаром
+                одного из авторов учебных
+                информационных блоков,
+                которые входят
+                в наш курс.
+              </p>
+            </div>
+            <div class="col-7 col-md-12">
+              <div class="videoBlock recording__videoBlock">
+                <div class="videoBlock-image"><img src="assets/images/content/free-webinar/videoBg.jpg"></div>
+                <button class="btn btn__video flex flex-align--center"><span class="btn__video--text">Видео</span><span class="btn__videoImg">
+                    <svg class="btn__videoImg--img" width="8px" height="10px">
+                      <path d="M1.289,10.013 L1.289,10.013 C0.542,10.012 -0.000,9.384 -0.000,8.518 L-0.000,2.480 C-0.000,1.613 0.542,0.984 1.289,0.984 C1.543,0.984 1.807,1.062 2.052,1.209 L7.220,4.284 C7.707,4.574 7.985,5.023 7.985,5.513 C7.985,5.995 7.715,6.433 7.245,6.713 L2.050,9.790 C1.807,9.935 1.543,10.013 1.289,10.013 ZM1.289,2.308 C1.257,2.308 1.208,2.308 1.208,2.480 L1.208,8.518 C1.208,8.690 1.257,8.690 1.289,8.690 C1.319,8.690 1.383,8.681 1.474,8.627 L6.669,5.550 C6.694,5.536 6.715,5.522 6.731,5.508 C6.709,5.490 6.680,5.469 6.643,5.447 L1.475,2.371 C1.383,2.316 1.319,2.308 1.289,2.308 Z"></path>
+                    </svg></span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about-course">
+        <div class="container container__right--right">
+          <div class="row">
+            <div class="col-12">
+              <div class="title title--gray about-course__title">
+                Что вас ждет на курсе:
+                расскажем о важных моментах
+                подготовки к родам
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container container__right--left">
+          <div class="row about-course__videoWrap">
+            <div class="col-8 col-md-12">
+              <div class="videoBlock about-course__videoBlock">
+                <div class="videoBlock-image"><img src="assets/images/content/free-webinar/videoBg.jpg"></div>
+                <button class="btn btn__video flex flex-align--center"><span class="btn__video--text">Видео</span><span class="btn__videoImg">
+                    <svg class="btn__videoImg--img" width="8px" height="10px">
+                      <path d="M1.289,10.013 L1.289,10.013 C0.542,10.012 -0.000,9.384 -0.000,8.518 L-0.000,2.480 C-0.000,1.613 0.542,0.984 1.289,0.984 C1.543,0.984 1.807,1.062 2.052,1.209 L7.220,4.284 C7.707,4.574 7.985,5.023 7.985,5.513 C7.985,5.995 7.715,6.433 7.245,6.713 L2.050,9.790 C1.807,9.935 1.543,10.013 1.289,10.013 ZM1.289,2.308 C1.257,2.308 1.208,2.308 1.208,2.480 L1.208,8.518 C1.208,8.690 1.257,8.690 1.289,8.690 C1.319,8.690 1.383,8.681 1.474,8.627 L6.669,5.550 C6.694,5.536 6.715,5.522 6.731,5.508 C6.709,5.490 6.680,5.469 6.643,5.447 L1.475,2.371 C1.383,2.316 1.319,2.308 1.289,2.308 Z"></path>
+                    </svg></span></button>
+              </div>
+            </div>
+            <div class="col-4 col-md-12">
+              <div class="about-course__text">Курс представляет собой набор недолгих, но содержательных видеосюжетов, снятых практикующими врачами, каждый из которых является признанным специалистом в области своих компетенций. К нему прилагается онлайн-поддержка с возможностью задать Ваши вопросы и в течение суток получить ответ, ссылки на полезный контент, личная беседа по Skype со специалистом и возможность записаться на офлайн-прием.</div>
+            </div>
+          </div>
+        </div>
+        <div class="container container__right--none">
+          <div class="row banner">
+            <div class="col-8 right">
+              <div class="banner__wrapper flex flex-align--center">
+                <div class="full-right"></div>
+                <h2 class="banner__title">Смотреть</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container container__right--left">
+          <div class="row">
+            <div class="col-12">
+              <div class="title about-course__title-2">
+                10 причин выбрать именно нас
+                и подготовиться к рождению ребенка
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <!--1-->
+              <div class="about-course__column before-line">
+                <div class="about-course__column--number"><span>1</span></div>
+                <div class="about-course__column--text"><span>Нескучная программа</span> Каждая лекция отвечает на актуальные вопросы, возникающие у любой беременной женщины.</div>
+              </div>
+              <!--2-->
+              <div class="about-course__column">
+                <div class="about-course__column--number"><span>2</span></div>
+                <div class="about-course__column--text"><span>Только практикующие спикеры</span>  Вебинары записаны специалистами, признанными в своей области, которые в реальности приняли сотни родов.</div>
+              </div>
+              <!--3-->
+              <div class="about-course__column">
+                <div class="about-course__column--number"><span>3</span></div>
+                <div class="about-course__column--text"><span>Индивидуальная консультация<span class="pink"> *</span></span> Предоставляем возможность получить персональные рекомендации врача по Skype.//4</div>
+              </div>
+              <!--4-->
+              <div class="about-course__column">
+                <div class="about-course__column--number"><span>4</span></div>
+                <div class="about-course__column--text"><span>Объективный взгляд на беременность.</span> Информируем обо всех существующих возможностях и предоставляем выбор.//5</div>
+              </div>
+              <!--5-->
+              <div class="about-course__column">
+                <div class="about-course__column--number"><span>5</span></div>
+                <div class="about-course__column--text"><span>Универсальность.</span> Все необходимое вы узнаете на одном онлайн-ресурсе и из одного информационно-обучающего курса.</div>
+              </div>
+              <!--6-->
+              <div class="about-course__column before-line">
+                <div class="about-course__column--number"><span>6</span></div>
+                <div class="about-course__column--text"><span>Комплексный подход к родам.</span> Программа курсов включает в себя максимально подробное описание разных этапов беременности, родов и послеродового периода.</div>
+              </div>
+              <!--7-->
+              <div class="about-course__column">
+                <div class="about-course__column--number"><span>7</span></div>
+                <div class="about-course__column--text"><span>Испытанные временем программы.</span>  Курс — это сборник практических врачебных рекомендаций и наблюдений за беременными женщинами в реальности.</div>
+              </div>
+              <!--8-->
+              <div class="about-course__column">
+                <div class="about-course__column--number"><span>8</span></div>
+                <div class="about-course__column--text"><span>Удобный формат.</span> Короткие видеосюжеты не утомительны, понятны и могут быть просмотрены женщиной, когда ей удобно.</div>
+              </div>
+              <!--9-->
+              <div class="about-course__column">
+                <div class="about-course__column--number"><span>9</span></div>
+                <div class="about-course__column--text"><span>Положительные отзывы.</span> У нас очень много благодарностей от участниц курса, каждая из которых нам дорога и подтверждает, что мы делаем очень нужное дело.</div>
+              </div>
+              <!--10-->
+              <div class="about-course__column">
+                <div class="about-course__column--number"><span>10</span></div>
+                <div class="about-course__column--text"><span>Дополнительные предложения.</span> Вместе с курсом предоставляется онлайн-поддержка и ссылки на полезный контент.</div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <p class="about-course__textInfo"><span class="pink">*</span> предоставляется в рамках пакета услуг «Полный»</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="women-passed">
+        <div class="container container__right--right">
+          <div class="row">
+            <div class="col-12">
+              <div class="title title--gray left-dot">Они прожили осознанные роды</div>
+            </div>
+          </div>
+        </div>
+        <div class="container container__right--none">
+          <div class="row">
+            <div class="columns">
+              <div class="col-4 col-md-12">
+                <div class="columns__Wrapper">
+                  <div class="columns__img"><img src="assets/images/content/women-passed/w-face-1.png"></div>
+                  <div class="columns__name columns__before"><span>Алла Борунова</span></div>
+                  <div class="columns__year"><span>24 года</span></div>
+                  <div class="columns__numberBirths"><span>первые роды</span></div>
+                  <div class="columns__tasks columns__text columns__before"><span>Задачи: Избавиться от страха перед родами. Рожать в присутствии мужа (муж отказывался). Определить оптимальный рацион в дородовой и послеродовой периоды.</span></div>
+                  <div class="columns__decision columns__text columns__before"><span>Решение: Проведена индивидуальная консультация. Приобретен полный курс лекций по подготовке к родам. Открыт доступ к курсу и всем дополнительным материалам. Даны рекомендации для разнообразного рациона по триместрам и для быстрого восстановления после родов.</span></div>
+                  <div class="columns__results columns__text columns__before"><span>Результаты: 100% ожидание родов как самого счастливого момента в жизни. 100% согласие мужа на совместные роды. Был предложен индивидуальный оптимальный баланс питания на период беременности, который также отлично подошел всей семье.</span></div>
+                </div>
+              </div>
+              <div class="col-4 col-md-12">
+                <div class="columns__Wrapper">
+                  <div class="columns__img"><img src="assets/images/content/women-passed/w-face-2.png"></div>
+                  <div class="columns__name columns__before"><span>Оксана Таранова</span></div>
+                  <div class="columns__year"><span>36 лет</span></div>
+                  <div class="columns__numberBirths"><span>вторые роды</span></div>
+                  <div class="columns__tasks columns__text columns__before"><span>Задачи: Избавиться от страха перед новыми родами, возникшего после сложных первых родов. Соблюсти ряд ограничений, вызванных некоторыми сложностями со здоровьем. Исключить риски послеродовой депрессии, которая проявилась при первых родах.</span></div>
+                  <div class="columns__decision columns__text columns__before"><span>Решение: Проведена индивидуальная консультация. Приобретен полный курс лекций по подготовке к родам.<br>Открыт доступ ко всем дополнительным материалам. Изучены эффективные практики послеродового восстановления. Выявлены оптимальные пути защиты от возможных осложнений.</span></div>
+                  <div class="columns__results columns__text columns__before"><span>Результаты: 100% полезная и нужная информация, вселившая уверенность перед родами. Качественная информация о способах работы с болью во время родов. Большинство ограничений перестали быть поводом для осложнений благодаря рекомендациям врачей онлайн школы «Название». 6 наиболее подходящих практик послеродового восстановления освоены.</span></div>
+                </div>
+              </div>
+              <div class="col-4 col-md-12">
+                <div class="columns__Wrapper">
+                  <div class="columns__img"><img src="assets/images/content/women-passed/w-face-3.png"></div>
+                  <div class="columns__name columns__before"><span>Леся Пловина</span></div>
+                  <div class="columns__year"><span>41 год</span></div>
+                  <div class="columns__numberBirths"><span>первые роды</span></div>
+                  <div class="columns__tasks columns__text columns__before"><span>Задачи: Успешно родить с кесаревым сечением. Выбрать оптимальный роддом с наиболее подходящими условиями и лучшими специалистами. Обеспечить полноценное грудное вскармливание малыша.</span></div>
+                  <div class="columns__decision columns__text columns__before"><span>Решение: Проведена индивидуальная консультация. Приобретен полный курс лекций по подготовке к родам. Получены персональные рекомендации специалистов нашего центра. Освоены основные принципы успешного грудного вскармливания.</span></div>
+                  <div class="columns__results columns__text columns__before"><span>Результаты: Здоровый ребенок при кесаревом сечении без осложнений для матери. 3 роддома с лучшими показателями по искусственным родам рекомендованы специалистом нашего центра в Skype-консультации. 4 из 4 разделов лекций курса на тему «Грудное вскармливание» оказались полезны на практике.</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--btn-banner-->
+        <div class="container container__right container__right--none">
+          <div class="row banner">
+            <div class="col-4 col-md-4 col-sm-12">
+              <div class="banner__text flex flex-align--center text__right--78"><span><span class="bold">Остались вопросы?<br>Хотите знать больше о нашем курсе?<br></span>Оставьте заявку, чтобы бесплатно
+                  получить развернутую консультацию
+                  о курсе.</span></div>
+            </div>
+            <div class="col-8 col-md-8-12 col-sm-12">
+              <div class="banner__wrapper flex flex-align--center">
+                <div class="full-right"></div>
+                <h2 class="banner__title">оставить<br>заявку</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="five-steps">
+        <div class="container container__right--none">
+          <div class="row">
+            <div class="col-12">
+              <div class="title title--white before-line">
+                5 шагов к осознанным родам,
+                ставшими реальностью
+                для всех наших выпускников
+              </div>
+            </div>
+          </div>
+          <div class="five-steps__columns">
+            <div class="row">
+              <div class="col-12">
+                <div class="five-steps__column">
+                  <div class="five-steps__column--number"><span>1</span></div>
+                  <div class="five-steps__column--text">
+                    <p>Вы заходите на наш сайт и знакомитесь с форматом наших автовебинаров, которые транслируются ежедневно по вечерам.</p>
+                  </div>
+                </div>
+                <div class="five-steps__column">
+                  <div class="five-steps__column--number"><span>2</span></div>
+                  <div class="five-steps__column--text">
+                    <p>Покупаете курс и получаете доступ к видеолекциям.</p>
+                  </div>
+                </div>
+                <div class="five-steps__column">
+                  <div class="five-steps__column--number"><span>3</span></div>
+                  <div class="five-steps__column--text">
+                    <p>Изучаете видеоматериал, читаете полезные статьи, ссылки на которые мы высылаем после приобретения курса, формируете вопросы и задаете их нашему специалисту в онлайн-режиме.</p>
+                  </div>
+                </div>
+                <div class="five-steps__column">
+                  <div class="five-steps__column--number"><span>4</span></div>
+                  <div class="five-steps__column--text">
+                    <p>Обращаетесь при желании в наш центр в режиме офлайн, если вы находитесь в Москве.</p>
+                  </div>
+                </div>
+                <div class="five-steps__column">
+                  <div class="five-steps__column--number"><span>5</span></div>
+                  <div class="five-steps__column--text">
+                    <p>Используете максимум информации, полученной посредством нашего курса и онлайн общения, во время беременности и родов, и советуете нас своим подругам как эффективный курс по подготовке к родам –<b> вносите свой вклад в развитие общества и более здоровые и счастливые семьи по всему миру.</b></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="three-options">
+        <div class="container container__right--none">
+          <div class="row">
+            <div class="col-4 col-md-1">
+              <div class="left-dot left-dot--three-options"></div>
+            </div>
+            <div class="col-8">
+              <div class="title">
+                3 варианта курса:
+                выбирайте, что подходит
+                именно вам
+              </div>
+            </div>
+          </div>
+          <div class="three-options__columns">
+            <div class="row">
+              <div class="col-4 col-md-12">
+                <div class="three-options__column">
+                  <div class="three-options__columnWr three-options__columnWr--white">
+                    <div class="three-options__column-Number"><span class="title">1</span></div>
+                    <h2 class="three-options__column-Title">Базовый тариф</h2>
+                    <button class="btn more-info more-info--three-options">Больше информации</button>
+                    <p class="three-options__column-Text">Покупаете видеокурс по подготовке к родам, состоящий из 10 лекций, записанных признанными практикующими врачами.</p>
+                    <p class="three-options__column-Price-Text">Стоимость набора лекций</p>
+                    <div class="three-options__column-Price"><span>7 000 ₽</span></div>
+                  </div><a class="btn three-options__column-button" href="#">заказать</a>
+                </div>
+              </div>
+              <div class="col-4 col-md-12">
+                <div class="three-options__column">
+                  <div class="three-options__columnWr three-options__columnWr--gray">
+                    <div class="three-options__column-Number"><span class="title">2</span></div>
+                    <h2 class="three-options__column-Title">Основательный тариф</h2>
+                    <button class="btn more-info more-info--three-options">Больше информации</button>
+                    <p class="three-options__column-Text">Покупаете 10 лекций видеокурса по подготовке к родам и получаете доступ к онлайн-поддержке, где вы можете задать любой вопрос и в течение суток получить ответ специалиста.</p>
+                    <p class="three-options__column-Price-Text">Стоимость пакета услуг</p>
+                    <div class="three-options__column-Price"><span>10 000 ₽</span></div>
+                  </div><a class="btn three-options__column-button" href="#">заказать</a>
+                </div>
+              </div>
+              <div class="col-4 col-md-12">
+                <div class="three-options__column">
+                  <div class="three-options__columnWr three-options__columnWr--pink">
+                    <div class="three-options__column-Number"><span class="title">3</span></div>
+                    <h2 class="three-options__column-Title">Полный тариф</h2>
+                    <button class="btn more-info more-info--three-options">Больше информации</button>
+                    <p class="three-options__column-Text">Покупаете набор из 10 видеолекций, подробно описывающих подготовку к родам, роды и послеродовый период; пользуетесь возможностями, которые предоставляет онлайн-поддержка, и обращаетесь к нашему специалисту за индивидуальным Skype-общением о тактике ведения вашей беременности.</p>
+                    <p class="three-options__column-Price-Text">Стоимость пакета услуг</p>
+                    <div class="three-options__column-Price"><span>12 000 ₽</span></div>
+                  </div><a class="btn three-options__column-button" href="#">заказать</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="natural-medicine">
+        <div class="container container__right--left">
+          <div class="row">
+            <div class="col-12">
+              <div class="title title--gray before-line before-line--gray">«Естественная медицина»:<br>&nbsp мы — за близость к природе!</div>
+            </div>
+          </div>
+        </div>
+        <div class="container container__right--none">
+          <div class="natural-medicine__content">
+            <div class="row">
+              <div class="natural-medicine__contentWrapper">
+                <div class="col-2 col-sm-12">
+                  <div class="natural-medicine__content--image"><img src="assets/images/content/natural-medicine/icon-1.png"></div>
+                </div>
+                <div class="col-10 col-sm-12">
+                  <div class="natural-medicine__content--text">
+                    <p>Клиника «Естественная медицина» была создана в 2006 году с целью помогать людям поддерживать здоровье с помощью натуральных средств и естественных методов лечения. Со временем забота о здоровье беременных женщин была выделена в самостоятельное направление, и на базе клиники был образован акушерский центр «Название», задачей которого является максимальная забота о женщинах на этапе вынашивания ребенка, его рождения и вскармливания грудью.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="natural-medicine__contentWrapper">
+                <div class="col-2 col-sm-12">
+                  <div class="natural-medicine__content--image"><img src="assets/images/content/natural-medicine/icon-2.png"></div>
+                </div>
+                <div class="col-10 col-sm-12">
+                  <div class="natural-medicine__content--text">
+                    <p>Наши пациентки не останутся при беременности наедине с новым для себя состоянием и опытом. Мы всегда рядом! Мы информируем, организовываем онлайн- и Skype-общение с практикующими опытными врачами, предлагаем видеокурс по подготовке к родам, проводим офлайн-курсы в реальном времени, ведем беременность, принимаем роды и выезжаем на послеродовые осмотры к женщинам, проживающим в Москве. В некоторые наши программы включено физическое и психологическое восстановление женщины, а также педиатрическая поддержка для новорожденного малыша.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="natural-medicine__contentWrapper">
+                <div class="col-2 col-sm-12">
+                  <div class="natural-medicine__content--image"><img src="assets/images/content/natural-medicine/icon-3.png"></div>
+                </div>
+                <div class="col-10 col-sm-12">
+                  <div class="natural-medicine__content--text">
+                    <p><b>Наш видео-курс разработан специально для тех, кто живет:</b></p>
+                    <ul>
+                      <li>в Москве и не имеет возможности познакомиться с уникальным контентом офлайн,</li>
+                      <li>не в Москве и не обладает доступом к качественной и проверенной информации.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="natural-medicine__contentWrapper">
+                <div class="col-2 col-sm-12">
+                  <div class="natural-medicine__content--image"><img src="assets/images/content/natural-medicine/icon-4.png"></div>
+                </div>
+                <div class="col-10 col-sm-12">
+                  <div class="natural-medicine__content--text">
+                    <p>Миссией нашего акушерского центра является создание благоприятных условий для осознанной счастливой беременности и естественного рождения здорового ребенка с минимальным необходимым вмешательством медицины. Мы ставим перед собой цели применять только эффективную передовую практику акушерства и дарить нашим женщинам радость естественных родов и счастливого материнства.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="natural-medicine__contentWrapper natural-medicine__content--sec2">
+                <div class="col-10 col-sm-12 right">
+                  <p class="natural-medicine__content--text"><b>С момента основания центра «Название» его специалисты:</b></p>
+                  <div class="row">
+                    <div class="col-3 col-md-6 col-sm-12">
+                      <div class="natural-medicine__content--number"><span>12%</span></div>
+                      <div class="natural-medicine__content--text">
+                        <p>
+                          кесаревых сечений
+                          против 25% в общем
+                          потоке роддомо
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-3 col-md-6 col-sm-12">
+                      <div class="natural-medicine__content--number"><span>2 780</span></div>
+                      <div class="natural-medicine__content--text">
+                        <p>провели<br>консультаций</p>
+                      </div>
+                    </div>
+                    <div class="col-3 col-md-6 col-sm-12">
+                      <div class="natural-medicine__content--number"><span>20%</span></div>
+                      <div class="natural-medicine__content--text">
+                        <p>
+                          случаев стимуляции
+                          роды против средне-
+                          статистических 90%
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-3 col-md-6 col-sm-12">
+                      <div class="natural-medicine__content--number"><span>>1000</span></div>
+                      <div class="natural-medicine__content--text">
+                        <p>
+                          обучили сотни мам
+                          и пап на офлайн-курсах
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="slider-2 flex flex-align--center">
+        <div class="container">
+          <div class="slider-2__wrapper owl-carousel">
+            <div class="slider-2__item">
+              <div class="title title--white">
+                Рабочие будни специалистов,
+                которые будут обучать вас лично
+              </div>
+            </div>
+            <div class="slider-2__item">
+              <div class="title title--white">
+                Рабочие будни специалистов,
+                которые будут обучать вас лично
+              </div>
+            </div>
+            <div class="slider-2__item">
+              <div class="title title--white">
+                Рабочие будни специалистов,
+                которые будут обучать вас лично
+              </div>
+            </div>
+            <div class="slider-2__item">
+              <div class="title title--white">
+                Рабочие будни специалистов,
+                которые будут обучать вас лично
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="join">
+        <div class="container container__right--right">
+          <div class="row">
+            <div class="col-12">
+              <div class="join__title right">У нас уже более<span>1 000</span>счастливых мам.<br>Присоединяйтесь!</div>
+            </div>
+          </div>
+        </div>
+        <!--banner-->
+        <div class="container container__right container__right--none">
+          <div class="row banner banner--left">
+            <div class="col-12">
+              <div class="banner__wrapper flex flex-align--center flex-justify--right">
+                <div class="full-left"></div>
+                <h2 class="banner__title">Присоединиться</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="fear">
+        <div class="container container__right--left">
+          <div class="row">
+            <div class="col-12">
+              <div class="title before-line before-line--gray">Знаем, как вам<br>сейчас страшно</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <ul class="fear__ul">
+                <li class="fear__li fear__li--title">Как я могу убедиться, что вы не мошенники?</li>
+                <li class="fear__li">Вы можете отследить нашу деятельность в средствах массовой информации, посетить нашу страницу в Facebook, ознакомиться с нашим сайтом, прочитать отзывы наших пациенток и сформировать собственное мнение после общения с нами, посетив наш центр при клинике «Естественная медицина», которая существует с 2006 года.</li>
+              </ul>
+              <ul class="fear__ul">
+                <li class="fear__li fear__li--title">Даже если вы такие успешные, как вы говорите, то где гарантии качества видеоуроков?</li>
+                <li class="fear__li">Вы можете зайти на наш сайт, просмотреть одну доступную лекцию и оценить для себя ее качество. Мы надеемся, что даже отдельная лекция будет вам полезна!</li>
+              </ul>
+              <ul class="fear__ul">
+                <li class="fear__li fear__li--title">Скажите, пожалуйста, как вы проверяете информацию?</li>
+                <li class="fear__li">Вся информация в нашем онлайн-курсе основана на реальных медицинских исследованиях и врачебных наблюдениях. В Москве действует наш центр акушерства, который принимает реальных беременных женщин и оказывает поддержку во время родов.</li>
+              </ul>
+              <ul class="fear__ul">
+                <li class="fear__li fear__li--title">Я хотела бы получить рекомендации. Среди моих друзей ваших клиентов нет. Для меня это важно. Как быть?</li>
+                <li class="fear__li">У вас есть возможность ознакомиться с отзывами наших клиенток, опубликованными на сайте с фотографиями детей, размещенными с разрешения родителей.</li>
+              </ul>
+              <ul class="fear__ul">
+                <li class="fear__li fear__li--title">Мне кажется, что онлайн-формат неэффективен.</li>
+                <li class="fear__li">Не сомневайтесь — онлайн-курс уже доказал свою эффективность на практике. Вы можете просматривать лекции любое количество раз в нужный вам момент в течение 3 месяцев с момента покупки курса, в то время как офлайн-занятия не предоставляют такой возможности.</li>
+              </ul>
+              <ul class="fear__ul">
+                <li class="fear__li fear__li--title">Я где-то прочитала, что к вам можно приехать в реальности?</li>
+                <li class="fear__li">Действительно, наш центр действует офлайн и приглашает желающих лично обратиться к нашим специалистам.</li>
+              </ul>
+              <ul class="fear__ul">
+                <li class="fear__li fear__li--title">Вы можете сделать роды безболезненными и легкими?</li>
+                <li class="fear__li">Мы сделаем все, чтобы вы подошли к этому этапу вашей жизни вооруженными необходимой информацией, а не со страхом.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="happy-parents">
+        <div class="container container__right--right">
+          <div class="row">
+            <div class="col-12">
+              <h2 class="title title--blue before-line before-line--pink">
+                Счастливые родители
+                делятся опытом
+              </h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="happy-parents__slider owl-carousel">
+                <div class="happy-parents__slider--item">
+                  <div class="videoBlock recording__videoBlock">
+                    <div class="videoBlock-image"><img src="assets/images/content/free-webinar/videoBg.jpg"></div>
+                    <button class="btn btn__video flex flex-align--center"><span class="btn__video--text">Видео</span><span class="btn__videoImg">
+                        <svg width="8px" height="10px">
+                          <use xlink:href="#video"></use>
+                        </svg></span></button>
+                  </div>
+                  <div class="happy-parents__info happy-parents__info--name before-line before-line--pink">Ирина Бородач</div>
+                  <div class="happy-parents__info happy-parents__info--years">24 года</div>
+                  <div class="happy-parents__info happy-parents__info--count">первые роды</div>
+                  <div class="happy-parents__info happy-parents__info--text">«…вчера Тимошке исполнилось три месяца, а я наконец-то нашла время сделать то, что давно хотела — рассказать о чудесном акушере, который помог сынуле появиться на свет, а мне — полностью изменить отношение к родам. Об Ольге Банниковой. Надеюсь, что мой рассказ пригодится мамочкам, которые только задумываются над тем, где и как появится на свет их малыш.»</div>
+                </div>
+                <div class="happy-parents__slider--item">
+                  <div class="videoBlock recording__videoBlock">
+                    <div class="videoBlock-image"><img src="assets/images/content/free-webinar/videoBg.jpg"></div>
+                    <button class="btn btn__video flex flex-align--center"><span class="btn__video--text">Видео</span><span class="btn__videoImg">
+                        <svg width="8px" height="10px">
+                          <use xlink:href="#video"></use>
+                        </svg></span></button>
+                  </div>
+                  <div class="happy-parents__info happy-parents__info--name before-line before-line--pink">Ирина Бородач</div>
+                  <div class="happy-parents__info happy-parents__info--years">24 года</div>
+                  <div class="happy-parents__info happy-parents__info--count">первые роды</div>
+                  <div class="happy-parents__info happy-parents__info--text">«…вчера Тимошке исполнилось три месяца, а я наконец-то нашла время сделать то, что давно хотела — рассказать о чудесном акушере, который помог сынуле появиться на свет, а мне — полностью изменить отношение к родам. Об Ольге Банниковой. Надеюсь, что мой рассказ пригодится мамочкам, которые только задумываются над тем, где и как появится на свет их малыш.»</div>
+                </div>
+                <div class="happy-parents__slider--item">
+                  <div class="videoBlock recording__videoBlock">
+                    <div class="videoBlock-image"><img src="assets/images/content/free-webinar/videoBg.jpg"></div>
+                    <button class="btn btn__video flex flex-align--center"><span class="btn__video--text">Видео</span><span class="btn__videoImg">
+                        <svg width="8px" height="10px">
+                          <use xlink:href="#video"></use>
+                        </svg></span></button>
+                  </div>
+                  <div class="happy-parents__info happy-parents__info--name before-line before-line--pink">Ирина Бородач</div>
+                  <div class="happy-parents__info happy-parents__info--years">24 года</div>
+                  <div class="happy-parents__info happy-parents__info--count">первые роды</div>
+                  <div class="happy-parents__info happy-parents__info--text">«…вчера Тимошке исполнилось три месяца, а я наконец-то нашла время сделать то, что давно хотела — рассказать о чудесном акушере, который помог сынуле появиться на свет, а мне — полностью изменить отношение к родам. Об Ольге Банниковой. Надеюсь, что мой рассказ пригодится мамочкам, которые только задумываются над тем, где и как появится на свет их малыш.»</div>
+                </div>
+                <div class="happy-parents__slider--item">
+                  <div class="videoBlock recording__videoBlock">
+                    <div class="videoBlock-image"><img src="assets/images/content/free-webinar/videoBg.jpg"></div>
+                    <button class="btn btn__video flex flex-align--center"><span class="btn__video--text">Видео</span><span class="btn__videoImg">
+                        <svg width="8px" height="10px">
+                          <use xlink:href="#video"></use>
+                        </svg></span></button>
+                  </div>
+                  <div class="happy-parents__info happy-parents__info--name before-line before-line--pink">Ирина Бородач</div>
+                  <div class="happy-parents__info happy-parents__info--years">24 года</div>
+                  <div class="happy-parents__info happy-parents__info--count">первые роды</div>
+                  <div class="happy-parents__info happy-parents__info--text">«…вчера Тимошке исполнилось три месяца, а я наконец-то нашла время сделать то, что давно хотела — рассказать о чудесном акушере, который помог сынуле появиться на свет, а мне — полностью изменить отношение к родам. Об Ольге Банниковой. Надеюсь, что мой рассказ пригодится мамочкам, которые только задумываются над тем, где и как появится на свет их малыш.»</div>
+                </div>
+                <div class="happy-parents__slider--item">
+                  <div class="videoBlock recording__videoBlock">
+                    <div class="videoBlock-image"><img src="assets/images/content/free-webinar/videoBg.jpg"></div>
+                    <button class="btn btn__video flex flex-align--center"><span class="btn__video--text">Видео</span><span class="btn__videoImg">
+                        <svg width="8px" height="10px">
+                          <use xlink:href="#video"></use>
+                        </svg></span></button>
+                  </div>
+                  <div class="happy-parents__info happy-parents__info--name before-line before-line--pink">Ирина Бородач</div>
+                  <div class="happy-parents__info happy-parents__info--years">24 года</div>
+                  <div class="happy-parents__info happy-parents__info--count">первые роды</div>
+                  <div class="happy-parents__info happy-parents__info--text">«…вчера Тимошке исполнилось три месяца, а я наконец-то нашла время сделать то, что давно хотела — рассказать о чудесном акушере, который помог сынуле появиться на свет, а мне — полностью изменить отношение к родам. Об Ольге Банниковой. Надеюсь, что мой рассказ пригодится мамочкам, которые только задумываются над тем, где и как появится на свет их малыш.»</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--btn-banner-->
+        <div class="container container__right container__right--left">
+          <div class="row banner">
+            <div class="col-12">
+              <div class="banner__wrapper flex flex-align--center">
+                <div class="full-right"></div>
+                <h2 class="banner__title">Получите доступ к очень<br>полезному онлайн-курсу,<br>чтобы спокойно и уверенно<br>ждать малыша!</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container container__right--none">
+        <div class="row">
+          <div class="col-2"><a class="footer__logo" href="#"><img src="assets/images/icons/footer/logo.png"></a></div>
+          <div class="col-8 col-sm-10">
+            <div class="footer__text">
+              <h2 class="title title--white">Спасибо за внимание!</h2>
+              <div class="flex flex-align--center">
+                <p class="copyright">© 2017 Клиника «Естественная медицина»</p><a class="foot-logo" href="#"><img src="assets/images/icons/footer/foot-logo.png"></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-2 col-md-12">
+            <div class="footer__links flex flex-justify--right flex-align--center"><a class="footer__link" href="#">
+                <svg width="20px" height="14px">
+                  <path fill-rule="evenodd" fill="rgb(255, 255, 255)" d="M19.988,11.696 C19.988,12.732 19.462,13.884 18.427,13.884 L2.186,13.884 C1.151,13.884 -0.000,12.732 -0.000,11.696 L-0.000,1.696 C-0.000,1.646 0.015,1.602 0.020,1.554 C-0.014,1.374 0.023,1.182 0.152,1.033 C0.175,1.007 0.206,0.993 0.232,0.972 C0.619,0.418 1.431,0.134 2.186,0.134 L18.427,0.134 C19.261,0.134 19.748,0.493 19.912,1.167 C19.973,1.291 19.993,1.424 19.968,1.556 C19.971,1.606 19.988,1.643 19.988,1.696 L19.988,11.696 ZM2.186,12.633 L18.427,12.633 C18.771,12.633 18.739,12.041 18.739,11.696 L18.739,2.742 L10.403,9.414 C10.286,9.516 10.140,9.567 9.994,9.567 C9.848,9.567 9.702,9.516 9.585,9.414 L1.249,2.742 L1.249,11.696 C1.249,12.041 1.842,12.633 2.186,12.633 ZM18.114,1.384 L2.186,1.384 C2.013,1.384 1.778,1.376 1.587,1.411 L9.994,8.115 L18.435,1.384 C18.431,1.384 18.430,1.384 18.427,1.384 L18.114,1.384 Z"></path>
+                </svg></a><a class="footer__link" href="#">
+                <svg width="11px" height="20px">
+                  <path fill-rule="evenodd" fill="rgb(255, 255, 255)" d="M7.349,1.884 C7.423,1.884 7.466,1.887 7.466,1.887 L9.097,1.887 L9.089,3.762 L7.469,3.762 C6.577,3.762 6.598,4.524 6.598,4.524 L6.598,7.496 L9.752,7.496 L9.312,9.369 L6.587,9.369 L6.587,18.740 L4.715,18.740 L4.714,9.369 L2.227,9.369 L2.222,7.496 L4.715,7.496 C4.715,7.496 4.715,5.204 4.715,4.582 C4.715,2.042 6.824,1.884 7.349,1.884 M9.097,1.887 L9.100,1.887 M7.349,0.634 L7.349,0.634 C6.900,0.634 6.022,0.708 5.191,1.210 C4.404,1.683 3.466,2.654 3.466,4.582 L3.466,6.247 L2.222,6.247 C1.890,6.247 1.572,6.379 1.337,6.614 C1.103,6.849 0.972,7.168 0.973,7.500 L0.978,9.373 C0.980,10.061 1.539,10.619 2.227,10.619 L3.465,10.619 L3.466,18.740 C3.466,19.430 4.025,19.990 4.715,19.990 L6.587,19.990 C7.277,19.990 7.836,19.430 7.836,18.740 L7.836,10.619 L9.312,10.619 C9.866,10.619 10.354,10.253 10.511,9.721 L10.951,7.848 C11.062,7.470 10.988,7.062 10.752,6.747 C10.517,6.431 10.146,6.247 9.752,6.247 L7.847,6.247 L7.847,5.013 L9.089,5.013 C9.776,5.013 10.335,4.456 10.338,3.767 L10.346,1.956 C10.348,1.933 10.348,1.910 10.348,1.887 C10.348,1.196 9.790,0.637 9.100,0.637 L9.097,0.637 L7.501,0.637 C7.466,0.635 7.414,0.634 7.349,0.634 L7.349,0.634 Z"></path>
+                </svg></a><a class="footer__link" href="#">
+                <svg width="21px" height="18px">
+                  <path fill-rule="evenodd" fill="rgb(255, 255, 255)" d="M14.301,2.098 C15.333,2.098 16.265,2.521 16.921,3.200 C17.738,3.042 18.508,2.754 19.200,2.354 C18.932,3.168 18.363,3.850 17.622,4.281 C18.347,4.196 19.040,4.009 19.684,3.731 C19.201,4.430 18.594,5.044 17.892,5.536 C17.899,5.685 17.903,5.835 17.903,5.985 C17.903,10.591 14.292,15.899 7.688,15.899 C5.661,15.899 3.773,15.322 2.185,14.332 C2.466,14.366 2.751,14.382 3.041,14.382 C4.723,14.382 6.271,13.825 7.501,12.890 C5.929,12.863 4.602,11.855 4.147,10.471 C4.366,10.512 4.591,10.534 4.823,10.534 C5.149,10.534 5.467,10.492 5.768,10.412 C4.125,10.092 2.888,8.684 2.888,6.995 C2.888,6.980 2.888,6.966 2.888,6.951 C3.372,7.213 3.925,7.369 4.515,7.387 C3.551,6.761 2.917,5.697 2.917,4.488 C2.917,3.849 3.095,3.250 3.403,2.738 C5.173,4.843 7.819,6.230 10.803,6.377 C10.741,6.122 10.710,5.854 10.710,5.583 C10.710,3.658 12.317,2.098 14.301,2.098 M19.684,3.731 L19.687,3.731 M14.301,0.849 C11.848,0.849 9.815,2.642 9.503,4.959 C7.496,4.556 5.671,3.492 4.359,1.933 C4.121,1.649 3.770,1.487 3.403,1.487 C3.371,1.487 3.338,1.489 3.305,1.491 C2.903,1.522 2.541,1.746 2.333,2.092 C1.898,2.816 1.668,3.644 1.668,4.488 C1.668,5.051 1.769,5.600 1.961,6.113 C1.756,6.340 1.639,6.637 1.639,6.951 L1.639,6.995 C1.639,8.221 2.122,9.356 2.926,10.208 C2.879,10.422 2.890,10.647 2.960,10.862 C3.237,11.705 3.742,12.432 4.396,12.986 C3.957,13.082 3.503,13.132 3.041,13.132 C2.796,13.132 2.558,13.119 2.333,13.091 C2.283,13.086 2.234,13.082 2.184,13.082 C1.660,13.082 1.183,13.414 1.007,13.918 C0.813,14.472 1.028,15.084 1.525,15.394 C3.370,16.543 5.502,17.149 7.688,17.149 C14.794,17.149 19.068,11.583 19.151,6.147 C19.733,5.665 20.246,5.109 20.682,4.484 C20.841,4.275 20.935,4.014 20.935,3.731 C20.935,3.306 20.723,2.930 20.399,2.705 C20.539,2.224 20.379,1.703 19.988,1.385 C19.760,1.199 19.481,1.105 19.200,1.105 C18.985,1.105 18.770,1.160 18.576,1.272 C18.163,1.510 17.721,1.699 17.256,1.834 C16.415,1.201 15.372,0.849 14.301,0.849 L14.301,0.849 Z"></path>
+                </svg></a><a class="footer__link" href="#">
+                <svg width="21px" height="15px">
+                  <path fill-rule="evenodd" fill="rgb(255, 255, 255)" d="M19.275,13.995 C18.736,14.383 17.228,14.899 10.901,14.899 C4.117,14.899 3.117,14.308 2.795,14.114 C1.120,13.107 0.922,9.035 0.901,7.812 C0.917,6.885 1.079,2.315 2.797,1.283 C3.119,1.089 4.124,0.493 10.901,0.493 C17.224,0.493 18.733,1.012 19.275,1.402 C20.779,2.486 20.907,6.574 20.911,7.795 C20.907,9.315 20.738,12.942 19.275,13.995 ZM18.545,2.416 C18.326,2.258 17.073,1.743 10.901,1.743 C4.936,1.743 3.678,2.211 3.441,2.355 C2.845,2.713 2.200,4.862 2.151,7.808 C2.201,10.760 2.837,12.681 3.439,13.043 C3.676,13.186 4.929,13.650 10.901,13.650 C17.078,13.650 18.328,13.138 18.545,12.981 C19.077,12.599 19.653,10.814 19.662,7.800 C19.653,4.831 19.080,2.802 18.545,2.416 ZM9.354,11.728 C9.255,11.787 9.143,11.818 9.031,11.818 C8.926,11.818 8.820,11.790 8.724,11.736 C8.528,11.626 8.407,11.417 8.407,11.193 L8.407,4.289 C8.407,4.064 8.528,3.856 8.724,3.744 C8.920,3.634 9.161,3.637 9.354,3.754 L14.974,7.205 C15.162,7.318 15.276,7.521 15.276,7.740 C15.276,7.959 15.162,8.162 14.974,8.276 L9.354,11.728 ZM9.656,5.396 L9.656,10.085 L13.443,7.740 L9.656,5.396 Z"></path>
+                </svg></a><a class="footer__link" href="#">
+                <svg width="14px" height="20px">
+                  <path fill-rule="evenodd" fill="rgb(255, 255, 255)" d="M7.744,1.244 L7.744,5.617 L12.123,5.617 L12.123,7.491 L7.764,7.491 L7.758,12.932 C7.758,13.943 7.810,14.592 7.917,14.880 C8.083,15.333 8.689,15.915 9.814,15.915 C10.686,15.915 11.863,15.652 12.745,14.992 L12.745,17.908 C12.009,18.259 11.325,18.400 10.729,18.542 C10.133,18.683 9.487,18.754 8.794,18.754 C8.022,18.754 5.795,18.732 4.880,16.403 C4.716,15.983 4.633,15.374 4.633,14.577 L4.633,7.494 L2.118,7.494 L2.130,5.577 C2.963,5.577 5.461,5.072 5.461,1.244 L7.744,1.244 M7.744,-0.006 L5.461,-0.006 C4.771,-0.006 4.212,0.554 4.212,1.244 C4.212,4.106 2.618,4.327 2.130,4.327 C1.443,4.327 0.884,4.883 0.881,5.572 L0.869,7.488 C0.867,7.821 0.998,8.140 1.232,8.376 C1.467,8.612 1.786,8.744 2.118,8.744 L3.384,8.744 L3.384,14.577 C3.384,15.541 3.493,16.289 3.718,16.860 C4.281,18.294 5.618,20.004 8.794,20.004 C9.580,20.004 10.328,19.921 11.017,19.759 L11.155,19.726 C11.738,19.589 12.483,19.418 13.282,19.036 C13.717,18.829 13.994,18.391 13.994,17.908 L13.994,14.992 C13.994,14.519 13.727,14.086 13.304,13.875 C13.127,13.786 12.936,13.742 12.745,13.742 C12.480,13.742 12.217,13.826 11.996,13.991 C11.253,14.548 10.301,14.664 9.814,14.664 C9.314,14.664 9.128,14.484 9.087,14.435 C9.066,14.337 9.007,13.970 9.007,12.932 L9.011,8.742 L12.123,8.742 C12.813,8.742 13.372,8.182 13.372,7.491 L13.372,5.617 C13.372,4.927 12.813,4.367 12.123,4.367 L8.993,4.367 L8.993,1.244 C8.993,0.554 8.434,-0.006 7.744,-0.006 L7.744,-0.006 Z"></path>
+                </svg></a></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="assets/js/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js"></script>
+    <script src="assets/js/datepicker-ru.min.js"></script>
+    <script src="assets/js/main.min.js"></script>
+  </body>
+</html>

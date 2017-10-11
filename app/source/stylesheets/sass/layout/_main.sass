@@ -1,0 +1,538 @@
+html
+	overflow-x: hidden
+body
+	font-family: $AgoraSans
+	overflow-x: hidden
+	letter-spacing: -0.7px
+	//min-height: 5000px
+main
+	padding: 0
+.flex
+	display: flex
+.flex-column
+	flex-flow: column
+.flex-column--mobile
+	flex-flow: column
+.flex-column--mobile_tablet
+	flex-flow: column
+.flex-justify--center
+	justify-content: center
+.flex-justify--left
+	justify-content: flex-start
+.flex-justify--right
+	justify-content: flex-end
+.flex-justify--space
+	justify-content: space-between
+
+.flex-align--top
+	align-items: flex-start
+.flex-align--center
+	align-items: center
+.flex-align--bottom
+	align-items: flex-end
+.container
+	&__right
+		box-sizing: border-box
+		&--left
+			padding-left: 160 + $container-padding-left
+		&--right
+			padding-left: 240 + $container-padding-left
+		&--none
+			padding-left: 82 + $container-padding-left
+
+
+.title
+	font-size: 50px
+	line-height: 50px
+	font-family: $AgoraSlab-Thin
+	color: $pink
+	max-width: 573px
+	letter-spacing: -2.5px
+	font-weight: normal
+	&--white
+		color: white
+		max-width: 710px
+	&--gray
+		color: #666666
+		max-width: 650px
+	&--blue
+		color: $blue
+.btn
+	bottom: 0
+	background: none
+	box-sizing: border-box
+	outline: 0
+	border: 0
+	box-shadow: none
+	cursor: pointer
+	transition: .5s
+	&__video
+		position: absolute
+		top: 20px
+		transform: rotate(-90deg)
+		height: 20px
+		left: -67px
+		text-align: left
+		text-transform: uppercase
+		&--text
+			display: block
+			font-size: 9px
+			font-weight: bold
+			color: $pink
+			margin-right: 10px
+
+			transition: .2s
+		&Img
+			display: block
+			width: 20px
+			height: 20px
+			background: $pink
+			text-align: center
+			line-height: 20px
+			border-radius: 50%
+			transform: rotate(90deg)
+			transition: .2s
+			path
+				fill: white
+			svg
+				fill: white
+		&:hover
+			.btn
+				&__video
+					&--text
+						color: lighten($pink,10)
+					&Img
+						background: lighten($pink,10)
+.videoBlock
+	margin-left: 4px
+	cursor: pointer
+	position: relative
+	&-image
+		border-radius: 10px
+		overflow: hidden
+		display: inline-block
+		img
+			max-width: 781px
+
+.full-left,
+.full-right
+	position: absolute
+	height: 100%
+	background: $blue
+	transition: .2s
+.full-right
+	left: 100%
+.full-left
+	right: 100%
+	z-index: 1
+.fullHeight
+	position: relative
+
+
+
+.left-dot
+	position: relative
+	margin-top: 2px
+	&:before
+		content: ''
+		position: absolute
+		display: block
+		width: 20px
+		height: 20px
+		background: $pink
+		border-radius: 50%
+		top: 6px
+		left: -116px
+
+.pink
+	color: $pink
+.bold
+	font-weight: bold
+
+
+.banner
+	margin-top: 86px
+	&__text
+		color: $gray
+		font-size: 14px
+		line-height: 22px
+		height: 141px
+		max-width: 211px
+
+	&__title
+		font-size: 30px
+		font-family: $AgoraSlab
+		text-transform: uppercase
+		line-height: 30px
+		color: $white
+
+	&__wrapper
+		cursor: pointer
+		position: relative
+		height: 141px
+		background: $blue
+		border-top-left-radius: 10px
+		border-bottom-left-radius: 10px
+		box-sizing: border-box
+		padding-left: 100px
+		transition: .2s
+		&:after
+			content: ''
+			display: block
+			width: 3px
+			height: 100%
+			position: absolute
+			background: $blue
+			right: -1px
+			top: 0
+			transition: .2s
+		&:hover
+			background: darken($blue,10)
+			.full-right,.full-left
+				background: darken($blue,10)
+			&:after
+				background: darken($blue,10)
+	&--left
+		margin-top: 180px
+		.banner
+			&__wrapper
+				padding-right: 100px
+				border-top-right-radius: 10px
+				border-top-left-radius: 0
+				border-bottom-left-radius: 0
+				border-bottom-right-radius: 10px
+
+.disabled
+	path
+		fill: white !important
+
+.before-line
+	position: relative
+	&:before
+		content: ''
+		display: block
+		width: 19px
+		height: 2px
+		background: white
+		position: absolute
+		top: 10px
+		left: -41px
+
+	&--gray
+		&:before
+			background: #cccccc
+	&--pink
+		&:before
+			background: $pink
+	&--blue
+		&:before
+			background: $blue
+p
+	b
+		font-weight: bold
+.form-group
+	display: block
+	width: 100%
+	height: auto
+	box-sizing: border-box
+	position: relative
+	input
+		box-sizing: border-box
+.hidden
+	display: none
+
+
+
+
+
+.columns
+	margin-top: 109px
+	color: $gray
+	.italic
+		font-family: $Beau-Italic
+		display: block
+		margin-top: 17px
+		font-size: 12px
+		line-height: 18px
+	&__block
+		color: $gray
+		letter-spacing: 0
+		margin-bottom: 24px
+		font-family: $Beau-Reg
+		font-size: 12px
+		line-height: 18px
+		&--1
+			margin-top: 83px
+			font-size: 20px
+			line-height: 22px
+		&--2
+			font-size: 14px
+			line-height: 22px
+		&--4
+			font-family: $Beau-Bold
+
+	&__Wrapper
+		max-width: 220px
+		margin: auto
+		letter-spacing: 0
+	&__img
+		width: 220px
+		height: 220px
+		border-radius: 50%
+		border: 10px solid white
+		overflow: hidden
+		img
+			width: 100%
+			height: 100%
+	&__before
+		position: relative
+		&:before
+			content: ''
+			display: block
+			position: absolute
+			top: 2px
+			left: -40px
+			width: 19px
+			height: 2px
+			background: $gray
+		&--white
+			&:before
+				background: white
+		&--pink
+			&:before
+				background: $pink
+		&--gray
+			&:before
+				background: #cccccc
+		&--blue
+			&:before
+				background: $blue
+	&__name
+		font-size: 20px
+		font-family: $Beau-Reg
+		margin-top: 87px
+		margin-left: 5px
+		position: relative
+		&:before
+			background: white
+	&__year
+		font-size: 14px
+		font-family: $Beau-Bold
+		margin-top: 3px
+		margin-left: 5px
+	&__numberBirths
+		font-size: 14px
+		font-family: $Beau-Reg
+		margin-top: 0
+		margin-left: 5px
+	&__text
+		margin-top: 14px
+		font-size: 12px
+		margin-left: 5px
+		position: relative
+		&:before
+			top: 10px
+	&__tasks
+		font-family: $Beau-Italic
+		line-height: 18px
+		&:before
+			background: $pink
+	&__decision
+		font-family: $Beau-Reg
+		line-height: 18px
+		&:before
+			background: #cccccc
+	&__results
+		font-family: $Beau-Bold
+		line-height: 18px
+		&:before
+			background: $blue
+
+
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover
+	background: $pink !important
+	border: 1px solid $pink
+
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight
+	background: $blue
+	border: 1px solid $blue
+	color: white
+
+
+.error
+	input
+		border:	1px solid red
+.success
+	input
+		border:	1px solid $blue
+
+
+.before-text
+	position: relative
+	&:before
+		font-family: $AgoraSlab
+		position: absolute
+		font-size: 20px
+		max-width: 100px
+		color: $gray
+		line-height: 24px
+		left: -160px
+		top: 5px
+		letter-spacing: -1px
+	&--useful
+		&:before
+			content: 'Полезные материалы'
+			margin-top: 12px
+			margin-left: 2px
+	&--conVideo
+		margin-top: -7px
+		&:before
+			content: 'Консультации с врачом'
+	&--pregnancy
+		&:before
+			content: 'Вебинар'
+
+
+.relative
+	position: relative
+
+
+.custom-f-h
+
+	.left-side
+		&__links
+			top: 562px
+
+	.footer
+		&__text
+			margin-top: 0
+		.title
+			display: block
+		.foot-logo
+			display: none
+
+		.copyright
+			margin-top: 20px
+
+
+
+
+.nicescroll-cursors
+	width: 2px !important
+	margin-right: 5px
+	//max-height: 57px
+
+.more-info
+	margin: 50px auto 0
+	display: block
+	background: $blue
+	color: white
+	font-size: 15px
+	padding: 15px 20px
+	border-radius: 5px
+
+
+@media only screen and (max-width : 1290px)
+	.container__right
+		&--right,&--none,&--left
+			padding-left: 180px
+
+
+@media only screen and (max-width : 1024px)
+	.container__right
+		&--right,&--none,&--left
+			padding-left: 0
+@media only screen and (max-width : 992px)
+	.col-md-12
+		width: 100%
+
+@media only screen and (max-width : 800px)
+	.title
+		font-size: 40px
+		line-height: 45px
+@media only screen and (max-width : 650px)
+	.title
+		font-size: 30px
+		line-height: 35px
+	.banner
+
+		&__text
+			font-size: 13px
+			height: 100px
+			line-height: 16px
+		&__wrapper
+			height: 100px
+			padding-left: 10px
+
+		&__title
+			font-size: 18px
+			line-height: 30px
+
+
+@media only screen and (max-width : 1290px)
+	.before-text
+		&:before
+			left: 0
+			top: -50px
+@media only screen and (max-width : 1024px)
+	.before-text:before
+		left: 0
+		top: -70px
+	.owl-nav
+		display: none
+	.consulting-our-doctors,
+	.women-passed,
+	.five-steps__columns,
+	.happy-parents,
+	.stageSlide-videos
+		.owl-dots
+			position: absolute
+			top: -50px
+			width: 100%
+			text-align: center
+			left: 0
+		.owl-dot
+			display: inline-block
+			margin: 0 3px
+			span
+				width: 40px
+				height: 3px
+				background: $blue
+				display: block
+			&.active
+				span
+					background: $pink
+
+@media only screen and (max-width : 768px)
+	.container
+		padding-left: 0
+	.videoBlock
+		width: 75%
+		margin-left: 35px
+		img
+			width: 100%
+
+
+@media only screen and (max-width : 320px)
+	.title
+		font-size: 24px
+		letter-spacing: 0
+		line-height: 26px
+	.banner
+		&__title
+			font-size: 16px
+			line-height: 30px
+
+
+@media only screen and (min-width : 768px)
+	.flex-column--mobile
+		flex-flow: row
+
+@media only screen and (min-width : 992px)
+	.more-info
+		display: none
+
+@media only screen and (min-width : 1200px)
+	.flex-column--mobile_tablet
+		flex-flow: row

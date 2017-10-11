@@ -1,0 +1,63 @@
+.information
+  padding-top: 11px
+  padding-bottom: 104px
+  background: url("../images/content/information/bg.jpg") no-repeat center / cover
+  &__title
+    padding-left: 80px
+    max-width: 590px
+  &__text
+    color: $gray
+    margin-top: 91px
+    font-size: 14px
+    line-height: 22px
+    font-family: $AgoraSans-Medium
+    &--tile
+      text-transform: uppercase
+      margin-bottom: 24px
+      display: block
+    &--right
+      max-width: 300px
+      padding-left: 17px
+    &--left
+      margin-top: 80px
+      max-width: 220px
+    &--li
+      position: relative
+      padding-left: 24px
+      letter-spacing: -.35px
+      max-width: 285px
+      &:before
+        content: ''
+        display: block
+        left: 19px
+        top: 9px
+        position: absolute
+        width: 3px
+        height: 3px
+        background: $pink
+        border-radius: 50%
+  .before-line
+    &:before
+      left: -115px
+      top: 6px
+
+@media only screen and (max-width : 992px)
+  .information__title
+    text-align: center
+  .information__text
+    display: none
+    &--left,
+    &--right,
+    &--li
+      max-width: 80%
+      margin: 10px auto
+    &--tile
+      margin: 20px auto
+      text-align: center
+      display: block
+      width: 100%
+@media only screen and (max-width : 650px)
+  .information
+    &__title
+      padding-left: 0
+

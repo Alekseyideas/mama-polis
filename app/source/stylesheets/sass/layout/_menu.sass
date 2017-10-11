@@ -1,0 +1,174 @@
+.left-side
+  position: absolute
+  width: 400px
+  background: $white
+  top: 0
+  left: 0
+  height: 100%
+  z-index: 2
+  &-content
+    padding-top: 100px
+    max-width: 119px
+    position: absolute
+    right: 40px
+    box-sizing: border-box
+    &__logo
+      img
+        width: 100%
+    &__text
+      font-size: 12px
+      color: #cccccc
+      max-width: 80px
+
+      line-height: 15px
+      margin-top: 34px
+      font-family: $AgoraSans-Medium
+
+  .btn
+    &__closeMenu
+      position: absolute
+      left: 23px
+      top: 23px
+      path
+        fill: white
+        transition: .2s
+      &:hover
+        path
+          fill: $pink
+    &__menu
+      background: $blue
+      width: 60px
+      border-radius: 10px
+      height: 60px
+      //float: right
+      //margin-top: 4px
+      //margin-right: -71px
+      &:hover
+        background: darken($blue,10)
+    &__menuLines
+      display: block
+      width: 19px
+      height: 2px
+      background: white
+      margin-top: -7px
+      margin-left: auto
+      margin-right: auto
+      &:before,
+      &:after
+        content: ''
+        display: block
+        width: 19px
+        height: 2px
+        background: white
+
+      &:before
+        margin: 5px 0 0
+      &:after
+        margin: 3px  0 0
+
+  &__links
+    position: absolute
+    //top: 562px
+    top: 323px
+    transition: .5s
+    &--image
+      fill: $blue
+      transition: .5s
+
+
+    &--li
+      margin-top: 15px
+      a
+        position: relative
+        &:hover
+          .left-side__links--image
+            opacity: 0
+            fill: $pink
+          .hoverImage
+            opacity: 1
+
+
+  .dev-logo
+    position: absolute
+    bottom: 91px
+    z-index: 99
+    right: 100px
+    font-size: 11px
+    color: #999999
+    line-height: 11px
+    opacity: 1
+    transition: .3s
+    display: block
+    &__img
+      display: block
+      width: 30px
+      height: auto
+    &__text
+      margin-top: 15px
+    &__link
+      color: $blue
+
+
+  .wrapper_btnMenu
+    position: relative
+    float: right
+    margin-top: 4px
+    margin-right: -71px
+
+    li
+      margin: 10px 0
+    &__menu
+      z-index: 2
+      position: absolute
+      background: $blue
+      color: white
+      padding: 60px
+      border-radius: 10px
+      top: 0
+      display: none
+      &-link
+        color: white
+        font-size: 12px
+        white-space: nowrap
+        text-transform: uppercase
+        transition: .2s
+        font-weight: bold
+        &:hover
+          color: $pink
+
+.hoverImage
+  position: absolute
+  top: -5px
+  fill: $pink
+  opacity: 0
+  width: 19px
+  height: 20px
+
+@media only screen and (max-width: 1024px)
+  .dev-logo
+    display: none !important
+  .left-side
+    height: 100px
+    &-content
+      left: 0
+      padding: 0
+      margin: 20px
+      max-width: 100%
+      &__logo
+        width: 150px
+      &__text
+        display: none
+    &__links--ul
+      display: none
+
+    .wrapper_btnMenu
+      margin: -55px -30px 0 0
+      &__menu
+        display: block !important
+        position: fixed
+        left: 100%
+        top: 0
+        width: 100%
+        border-radius: 0
+        height: 100%
+        transition: 1s

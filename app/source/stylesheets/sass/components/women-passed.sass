@@ -1,0 +1,35 @@
+.women-passed
+  padding: $section-padding-top 0 80px
+  background: url("../images/content/women-passed/bg.jpg") no-repeat top / cover
+  .col-4:nth-child(2)
+    .columns__Wrapper
+      margin-left: 31px
+  .col-4:nth-child(3)
+    .columns__Wrapper
+      margin-left: 43px
+  .title
+    margin-top: 9px
+  .container__right--none
+    padding-left: 120px
+
+  .banner
+    padding-left: 25px
+    margin-top: 34px
+  .left-dot
+    &:before
+      top: 9px
+      left: -119px
+
+@media only screen and (max-width : 992px)
+
+  .women-passed
+    .container__right--none
+      padding-left: 0
+    .columns
+      &__Wrapper
+        max-width: 400px
+      &__img
+        margin: auto
+      &__before
+        &:before
+          display: none

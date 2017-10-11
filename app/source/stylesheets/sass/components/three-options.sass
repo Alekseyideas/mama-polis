@@ -1,0 +1,113 @@
+.three-options
+  padding: $section-padding-top 0 30px
+  background: url("../images/content/three-options/bg.jpg") no-repeat bottom / cover
+  &__columns
+    margin-top: 81px
+    .col-4:nth-child(2)
+      .three-options__column
+        margin-left: 16px
+    .col-4:nth-child(3)
+      .three-options__column
+        margin-left: 26px
+  &__column
+    margin-bottom: 50px
+    width: 260px
+    &-Number
+      margin-bottom: 26px
+    &-Title
+      font-size: 24px
+      color: $pink
+      min-height: 45px
+    &-Text
+      font-size: 12px
+      margin-top: 14px
+      color: #666666
+      line-height: 18px
+      height: 140px
+    &-Price-Text
+      font-size: 14px
+      color: #666666
+      margin-top: 19px
+    &-Price
+      font-size: 24px
+      color: $blue
+      margin-top: 11px
+    &-button
+      width: 100%
+      text-align: center
+      display: block
+      margin-top: 17px
+      color: white
+      background: $blue
+      height: 60px
+      line-height: 60px
+      font-family: $AgoraSlab
+      font-size: 20px
+      text-transform: uppercase
+      border-radius: 10px
+      &:hover
+        background: darken($blue,10)
+  .container__right--none
+    padding-left: 127px
+  .title
+    margin-top: -9px
+    margin-left: 16px
+    padding-left: 18px
+.three-options__columnWr
+  border-radius: 10px
+  box-shadow: 0 -5px 20px rgba(#a7a7a7,.3)
+  padding: 20px 20px
+  box-sizing: border-box
+  height: 400px
+  letter-spacing: 0
+  &--pink
+    background: $pink
+    .three-options__column
+      &-Number
+        .title
+          color: white
+      &-Title
+        color: white
+      &-Text
+        color: #333333
+      &-Price-Text
+        color: #333333
+      &-Price
+        color: white
+  &--gray
+    background: #f2f2f2
+  &--white
+    background: white
+
+
+  .title
+    margin-top: 11px
+    padding-left: 0
+    margin-left: -4px
+
+
+.left-dot--three-options
+  &:before
+    left: 21px
+    top: 0
+
+@media only screen and (max-width : 992px)
+  .more-info--three-options
+    margin-top: 20px
+    background: #ebebeb
+    color: black
+  .three-options
+    &__columnWr
+      height: auto
+    .container__right--none
+      padding-left: 0
+    &__column
+      margin: auto
+      min-height: inherit
+    &__column-Text
+      display: none
+
+  .three-options__columns .col-4:nth-child(2) .three-options__column,.three-options__columns .col-4:nth-child(3) .three-options__column
+    margin: 20px auto
+    min-height: inherit
+    height: auto

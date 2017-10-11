@@ -1,0 +1,53 @@
+.useful
+  padding: $section-padding-top 0 120px
+  background: url("../images/content/useful/bg.jpg") no-repeat right/ cover
+
+.toggle
+  width: 100%
+  margin-top: 51px
+  &:first-child
+    margin-top: -7px
+
+  .title
+    cursor: pointer
+    width: 100%
+    position: relative
+    max-width: 650px
+    &:hover
+      color: darken($blue,10)
+    &.active
+      color: $gray
+      .btn
+        &__toggle
+          &--close
+            display: block
+  &-links
+    font-size: 24px
+    line-height: 36px
+    margin-top: 27px
+    display: none
+    margin-bottom: -10px
+
+  &-link
+    color: $blue
+    &:hover
+      color: darken($blue,10)
+
+.btn
+  &__toggle
+    &--close
+      position: absolute
+      right: -20px
+      top: 25%
+      display: none
+      svg
+        fill: $blue
+        transition: .2s
+      &:hover
+        svg
+          fill: $gray
+
+
+@media only screen and (max-width : 1024px)
+  .useful
+    padding: 190px 0 120px

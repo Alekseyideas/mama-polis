@@ -1,0 +1,64 @@
+
+.footer
+	background: $pink
+	color: $white
+	text-align: center
+	padding: 90px 0 70px
+	&__logo
+		img
+			max-width: 60px
+			height: auto
+	&__text
+		text-align: left
+		margin: auto
+		max-width: 546px
+		margin-top: 26px
+	.title
+		margin-top: 14px
+		display: none
+
+	.copyright
+		font-size: 14px
+
+
+	&__links
+		margin-top: 27px
+		margin-right: -50px
+	&__link
+		margin-right: 20px
+		path
+			transition: .5s
+
+		&:hover
+			path
+				fill: lighten($pink,20)
+
+
+	.foot-logo
+		margin-left: 162px
+		margin-top: 2px
+
+@media only screen and (max-width : 500px)
+	.footer__logo img
+		max-width: 38px
+@media only screen and (max-width : 1024px)
+
+	.footer
+		padding: 30px 0
+
+		&__links
+			margin-top: 60px
+			justify-content: space-between
+			width: 100%
+		&__link
+			margin-right: 0
+		&__text
+			margin-top: 0
+
+@media only screen and (max-width : 768px)
+	.footer
+		.foot-logo
+			margin-left: 20px
+			float: right
+			img
+				max-width: inherit

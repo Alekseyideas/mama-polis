@@ -1,0 +1,122 @@
+.consulting-form
+  padding: $section-padding-top 0 30px
+  background: url("../images/content/consulting-form/bg.jpg") no-repeat top right / cover
+  &__title
+    margin-top: 65px
+    margin-left: 22px
+    font-size: 24px
+    letter-spacing: -1.2px
+    color: $gray
+  &__placeholder
+    font-size: 14px
+    font-family: $AgoraSans-Italic
+    color: #cccccc
+  &__form
+    margin-top: 60px
+
+
+  &__input
+    display: block
+    width: 100%
+    border: 0
+    box-shadow: 0 -10px 20px rgba(#cccccc,.3)
+    background: white
+    height: 60px
+    line-height: 60px
+    padding: 0 20px
+    border-radius: 10px
+    box-sizing: border-box
+    margin-left: 2px
+    font-family: $AgoraSans-Italic
+    color: #cccccc
+    letter-spacing: 0
+    transition: .2s
+    &:focus,&:hover
+      box-shadow: 0 10px 20px rgba(#cccccc,1)
+    &::placeholder
+      letter-spacing: 0
+      font-size: 14px
+      font-family: $AgoraSans-Italic
+      color: #cccccc
+    &--doctor
+      cursor: pointer
+      &.active
+        border-bottom-left-radius: 0
+        border-bottom-right-radius: 0
+        .doctors-select
+          display: block
+
+
+  &__btnIcon
+    position: absolute
+    right: 10px
+    top: 50%
+    &--date
+      margin-top: -26px
+    &--doctor
+      margin-top: -26px
+      .error
+        border: 1px solid red
+
+  .form-group
+    margin-bottom: 20px
+    max-width: 500px
+    &--doctor
+      .error
+        border: 1px solid red
+  #doctor
+    opacity: 0
+    position: absolute
+    height: 0
+  .banner
+    margin-top: 100px
+
+
+
+  .doctors-select
+    position: absolute
+    top: 100%
+    background: white
+    width: 100%
+    left: 2px
+    font-size: 14px
+    border-bottom-left-radius: 10px
+    border-bottom-right-radius: 10px
+    box-shadow: 0 10px 20px rgba(#cccccc,1)
+    box-sizing: border-box
+    z-index: 2
+    overflow: hidden
+    display: none
+    li
+      cursor: pointer
+      padding-left: 20px
+      transition: .2s
+      color: darken(#cccccc,30)
+      border-bottom: 1px solid #ccc
+      &.active
+        background: $blue
+        color: white
+        &:hover
+          background: $blue
+          color: white
+      &:hover
+        background: #ccc
+        color: white
+
+  .form-group
+    label
+      position: absolute
+      top: 10px
+      color: red
+      left: 15px
+      display: none !important
+
+@media only screen and (max-width : 1024px)
+
+  .consulting-form
+    padding-top: 190px
+    .before-text:before
+      left: 0
+      top: -70px
+    &__form
+      margin: 30px 20px

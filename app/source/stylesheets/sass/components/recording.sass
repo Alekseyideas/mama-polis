@@ -1,0 +1,156 @@
+.recording
+  background: url("../images/content/recording/bg.jpg") no-repeat center / cover
+  padding-bottom: 160px
+  .videoBlock
+    margin-top: -5px
+  #block-1
+    min-height: 665px
+  .fullHeight
+    padding-top: 100px
+    box-sizing: border-box
+  &-slider
+    margin-top: 46px
+    &__wrap
+      max-width: 669px
+      margin: auto
+    &__text
+      font-size: 24px
+      line-height: 36px
+      color: $gray
+      max-width: 335px
+
+      margin-top: 14px
+    &__arrow
+      fill: #cccccc
+      transition: .2s
+
+
+
+  .owl-stage-outer
+    width: 94%
+    margin: auto
+  .owl-prev,
+  .owl-next
+    position: absolute
+    top: 50%
+    margin-top: -96px
+    &:hover
+      .recording-slider__arrow
+        fill: $pink
+  .owl-prev
+    left: 5px
+  .owl-next
+    right: 0
+  &__footer
+    position: absolute
+    bottom: 57px
+    left: 0
+    width: 100%
+  .owl-dots
+    margin-top: 91px
+    margin-left: 83px
+  .owl-dot
+    display: inline-block
+    margin-right: 1px
+    span
+      display: block
+      width: 19px
+      height: 2px
+      background: $blue
+    &.active
+      span
+        background: $white
+
+
+
+
+
+
+
+
+
+.to-next
+  cursor: pointer
+  margin-left: 25px
+  path
+    fill: $pink
+.blockInfo
+  margin-bottom: 13px
+  &-wrapper
+    margin-top: 87px
+
+    .col-4
+      &:nth-child(4)
+        clear: both
+  &__img
+    img
+      height: 59px
+      width: auto
+      //margin-left: -5px
+  &__text
+    margin-top: 10px
+    font-size: 14px
+    color: $gray
+    line-height: 22px
+    font-family: $AgoraSans-Medium
+    max-width: 199px
+@media only screen and (max-width : 1024px)
+  .recording
+    #block-1
+      padding-top: 150px
+    .to-next
+      display: none
+    .btn__video
+    .videoBlock
+      max-width: 500px
+      margin: auto
+
+      &-image
+        margin: auto
+        max-width: 500px
+        display: block
+        img
+          width: 100%
+@media only screen and (max-width : 768px)
+  .blockInfo
+    margin-bottom: 13px
+    &__img
+      img
+        margin: auto
+    &__text
+      margin: 30px auto
+    &-wrapper
+      margin-top: 87px
+      .col-4
+        &:nth-child(4)
+          clear: none
+@media only screen and (max-width : 650px)
+  .recording
+    padding-bottom: 50px
+    .videoBlock
+      max-width: 380px
+      &-image
+        max-width: 380px
+    #block-1
+      min-height: inherit
+      padding-bottom: 40px
+    .owl-stage-outer
+      width: 100%
+    &-slider__wrap
+      max-width: 100%
+    .owl-dots
+      margin:  20px 0 0
+    &-slider__text
+      font-size: 18px
+      line-height: 24px
+    .blockInfo__img
+      img
+        height: 40px
+        margin: 0 0 -10px
+
+@media only screen and (max-width : 400px)
+  .recording
+    .videoBlock
+      max-width: 280px
+      &-image
+        max-width: 280px

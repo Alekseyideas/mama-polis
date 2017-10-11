@@ -1,0 +1,58 @@
+.five-steps
+  padding: $section-padding-top 0 136px
+  background: url("../images/content/five-steps/bg.jpg") no-repeat top / cover
+  position: relative
+  z-index: 2
+  &__columns
+    margin-top: 105px
+  &__column
+    display: inline-block
+    vertical-align: top
+    width: 15.5%
+    margin-left: 2.5%
+    margin-bottom: 50px
+    &:nth-child(1)
+      margin-left: 0
+    &:nth-child(5)
+      position: relative
+      width: 25%
+      &:after
+        content: ''
+        display: block
+        width: 19px
+        height: 2px
+        background: white
+        position: absolute
+        left: 0
+        bottom: -50px
+    &--number
+      color: white
+      font-size: 50px
+      font-family: $AgoraSlab-Thin
+    &--text
+      margin-top: 46px
+      font-size: 14px
+      color: #333333
+  .title
+    margin-top: -11px
+
+@media only screen and (max-width : 1024px)
+  .five-steps
+    padding: 49px 0 30px
+    &__columns
+      margin-top: 40px
+      .owl-dots
+        top: inherit
+        bottom: 0
+      .owl-dot
+        span
+          background: white
+        &.active
+          span
+            background: $blue
+    &__column
+      width: 100%
+      text-align: center
+      &--number
+        text-align: center
+        margin-top: 10px

@@ -1,0 +1,34 @@
+.fear
+  padding: 100px 0
+  background: url("../images/content/fear/bg.jpg") no-repeat top / cover
+  .title
+    margin-bottom: 46px
+    margin-top: -9px
+  &__ul
+    max-width: 528px
+    margin: 18px 0
+    letter-spacing: 0
+  &__li
+    font-size: 14px
+    color: $gray
+    line-height: 22px
+
+    &:before
+      content: ''
+      display: block
+      float: left
+      width: 14px
+      height: 1px
+      background: $gray
+      margin: 10px 7px 0 0
+    &--title
+      font-weight: bold
+
+
+@media only screen and (max-width : 992px)
+  .fear
+    padding: 50px 0 10px
+    &__li
+      display: none
+      &--title
+        display: block

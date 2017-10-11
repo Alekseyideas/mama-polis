@@ -1,0 +1,95 @@
+.happy-parents
+  padding: $section-padding-top 0 80px
+  background: url("../images/content/happy-parents/bg.jpg") no-repeat top right / 90%
+  .owl-carousel
+    z-index: 0
+    .owl-stage-outer
+      overflow: visible
+
+  .owl-prev,
+  .owl-next
+    position: absolute
+    top: 25%
+    &:hover
+      .recording-slider__arrow
+        fill: $pink
+  .owl-prev
+    left: -84px
+  .owl-next
+    right: 50px
+  &__slider
+    margin: 144px 0 0 -55px
+    font-family: $Beau-Reg
+    font-size: 14px
+    color: $gray
+    &--item
+      padding-left: 50px
+      max-width: 460px
+      width: 100%
+  &__info
+    display: none
+    margin-left: 5px
+    &--name
+      font-size: 20px
+      margin-top: 21px
+      margin-top: 14px
+    &--years
+      font-family: $Beau-Bold
+    &--count
+      color: $gray
+    &--text
+      font-family: $Beau-Italic
+      font-size: 12px
+      margin-top: 17px
+      line-height: 19px
+  .active
+    .happy-parents
+      &__info
+        display: block
+  .banner__title
+    font-size: 20px
+    line-height: 20px
+    font-family: $AgoraSlab-Medium
+
+  .title
+    margin-top: -50px
+  .before-line
+    &:before
+      left: -39px
+      top: 4px
+
+  .banner
+    margin-top: 68px
+
+
+@media only screen and (max-width : 1024px)
+
+  .happy-parents__slider
+    margin-top: 65px
+    .owl-dots
+      left: 0
+  .happy-parents
+    padding: 50px 0 10px
+    background-position: top left
+    background-size: cover
+    .banner__title
+      font-size: 16px
+      line-height: 20px
+    //.owl-nav
+      //display: none
+    .happy-parents__slider--item
+      margin: auto
+  .happy-parents__slider--item
+    max-width: 300px
+
+@media only screen and (max-width : 500px)
+  .happy-parents__slider--item
+    padding-left: 88px
+    padding-right: 20px
+
+  .happy-parents .active .happy-parents__info
+    padding-right: 20px
+
+  .happy-parents__slider
+    .owl-dots
+      left: 20px

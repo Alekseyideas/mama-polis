@@ -1,0 +1,160 @@
+.VT-test
+  background: #f2f2f2
+  padding: 60px 0 80px
+  position: relative
+  z-index: 2
+  .owl-nav
+    display: none
+
+  .slider
+    margin-left: -40px
+.test_question
+  padding-left: 40px
+
+
+.VT-test-pagination
+  &__links
+    margin-left: 115px
+    margin-top: 2px
+  &__link
+    margin-right: 68px
+    cursor: pointer
+    color: $blue
+    font-family: $AgoraSlab
+    font-size: 24px
+    &:last-child
+      margin-right: 0
+    &--active
+      color: $pink
+
+.test
+  &__questionWrapper
+    position: relative
+  &__nav
+    height: 29px
+    position: absolute
+    top: 35%
+
+    &--next
+      right: -80px
+    &--prev
+      left: -120px
+  &__questionText
+    font-size: 24px
+    letter-spacing: -1.2px
+    margin-top: 35px
+    margin-bottom: 58px
+    color: $gray
+
+
+  &__radioBtn
+    display: none
+    //-webkit-appearance: radio
+  &__radio
+    display: block
+    width: 18px
+    height: 18px
+    border-radius: 50%
+    border: 1px solid $blue
+    margin-right: 20px
+    position: relative
+    &:after
+      content: ''
+      width: 10px
+      height: 10px
+      position: absolute
+      background: $blue
+      border-radius: 50%
+      left: 50%
+      top: 50%
+      margin-top: -5px
+      margin-left: -5px
+      display: none
+    &--active
+      &:after
+        display: block
+  &__answer
+    cursor: pointer
+    color: $gray
+    font-size: 20px
+    letter-spacing: -1px
+    transition: .2s
+    &:hover
+      color: $blue
+.subTest__text
+  font-size: 12px
+  letter-spacing: 0px
+  line-height: 18px
+  font-family: $AgoraSans-Italic
+  color: $gray
+  max-width: 450px
+.test_questionForm
+  .form-group
+    margin-bottom: 38px
+    margin-left: -38px
+
+.title--VT
+  margin-top: 49px
+  margin-left: 2px
+
+.before__textTest
+  position: absolute
+  left: -317px
+  max-width: 129px
+  font-size: 20px
+  font-family: $AgoraSans-Light
+  letter-spacing: -1px
+  color: $gray
+  line-height: 30px
+  top: 80px
+
+
+
+.btn__test
+  color: white
+  text-transform: uppercase
+  font-family: $AgoraSlab-Medium
+  width: 100%
+  max-width: 240px
+  height: 60px
+  border-radius: 10px
+  font-size: 20px
+  letter-spacing: 0
+  margin-top: 35px
+  &--reply
+    background: $blue
+    margin-right: 70px
+  &--not-true
+    background: $pink
+  &--disable
+    opacity: .1
+@media only screen and (max-width : 1024px)
+  .VT-test-pagination
+    &__link
+      margin-right: 20px
+    &__links
+      margin-left: 20px
+
+@media only screen and (max-width : 768px)
+  .test_questionForm .form-group
+    margin-left: 0
+  .btn__test
+    font-size: 14px
+    height: 45px
+
+    &--reply
+      margin-right: 20px
+
+@media only screen and (max-width : 500px)
+  .stage__text
+    font-size: 16px
+  .VT-test-pagination
+    &__links
+      margin-top: 3px
+    &__link
+      margin-right: 10px
+      font-size: 16px
+  .test
+    &__questionText
+      font-size: 20px
+      line-height: 25px

@@ -1,0 +1,52 @@
+.slider-2
+  padding: $section-padding-top 0
+  background: url("../images/content/slider-2/bg.jpg") no-repeat center / cover
+  min-height: 438px
+  position: relative
+  z-index: 3
+  &__wrapper
+    max-width: 780px
+    margin: auto
+    position: relative
+
+
+  .owl-dots
+    position: absolute
+    bottom: -200px
+    width: 100%
+    text-align: center
+  .owl-dot
+    display: inline-block
+    margin-left: 1px
+    span
+      display: block
+      width: 19px
+      height: 2px
+      background: $pink
+    &.active
+      span
+        background: #fff
+  .owl-prev,
+  .owl-next
+    position: absolute
+    top: 50%
+    margin-top: -15px
+    &:hover
+      .recording-slider__arrow
+        fill: $pink
+  .owl-prev
+    left: -100px
+  .owl-next
+    right: -15px
+
+
+@media only screen and (max-width : 992px)
+  .slider-2
+    min-height: 100px
+    .owl-dots
+      bottom: -40px
+
+
+@media only screen and (max-width : 768px)
+  .slider-2__item
+    padding:  0 20px

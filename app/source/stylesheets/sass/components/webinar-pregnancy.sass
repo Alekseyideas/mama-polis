@@ -1,0 +1,167 @@
+.webinar
+  padding: $section-padding-top 0 0
+  background: url("../images/content/webinar/bg.jpg") no-repeat bottom / cover
+  .title
+    max-width: 530px
+    &--seeAlso
+      margin-top: 100px
+      margin-left: 82px
+      &.left-dot
+        &:before
+          left: -79px
+    &--pregnancy
+      margin-top: -7px
+  &__endText
+    margin: 65px 0 0 4px
+    color: $gray
+    font-size: 24px
+    letter-spacing: -1.2px
+  &__videoChatBlocks
+    margin-top: 57px
+  &__questions-tile
+    font-size: 24px
+    letter-spacing: -1.2px
+    color: $gray
+    font-weight: normal
+  &__questions
+    margin-top: 93px
+    margin-left: 80px
+  &__questions-wrapper
+    margin-top: 26px
+
+  &__question-time
+    font-size: 14px
+    margin-left: -34px
+    width: 20px
+    &--pink
+      color: $pink
+
+  &__question-text
+    margin-left: 16px
+    font-size: 14px
+    color: $gray
+  &__doctorName
+    font-size: 14px
+    font-family: $AgoraSans-Medium
+    color: #333333
+    margin: 32px 0 0 20px
+    &.left-dot
+      &:before
+        left: -60px
+        top: 2px
+  &__date
+    font-size: 14px
+    color: #999999
+    margin: -6px 0 0 20px
+  &__chat
+    margin-top: 25px
+    .video-chat-body
+      max-height: 385px
+.wrapper-right-webinar-column
+  max-width: 261px
+  margin-right: -20px
+.videoBlock
+  &__chat
+    &--active
+      .btn
+        &__video
+          left: -86px
+          top: 36px
+          &--text
+            color: $blue
+        &__videoImg
+          background: $blue
+        &:hover
+          .btn
+            &__video--text
+              color: darken($blue,10)
+            &__videoImg
+              background: darken($blue,10)
+
+    &--passed
+      margin-left: 19px
+      &:after
+        content: ''
+        display: block
+      img
+        width: 220px
+      .btn
+        &__video
+          left: -76px
+          top: 27px
+        &__video--text
+          color: $gray
+          text-decoration: line-through
+        &__videoImg
+          background: $gray
+        &:hover
+          .btn
+            &__video--text
+              color: darken($gray,10)
+            &__videoImg
+              background: darken($gray,10)
+
+
+.full-screen
+  position: absolute
+  right: -10px
+  bottom: -10px
+  svg
+    fill: $pink
+
+@media only screen and (max-width : 1290px)
+  .before-text--pregnancy
+    &:before
+      left: -100px
+@media only screen and (max-width : 1290px)
+  .before-text--pregnancy
+    &:before
+      left: 0
+      top: -50px
+
+
+@media only screen and (max-width : 1080px)
+  .videoBlock__chat--active
+    margin-left: 40px
+@media only screen and (max-width : 1024px)
+  .webinar
+    padding-top: 180px
+    .wrapper-right-webinar-column
+      max-width: 400px
+    .flex--edit
+      justify-content: center
+    .videoBlock__chat--active .btn__video
+      left: 0
+    .videoBlock-image
+      margin: auto
+      display: block
+      max-width: 70%
+      img
+        width: 100%
+  .title
+    &--seeAlso
+      margin-top: 40px
+      margin-bottom: 40px
+
+
+
+
+@media only screen and (max-width : 730px)
+  .webinar
+    .videoBlock
+      margin-left: 0
+      width: 100%
+    .videoBlock__chat--active .btn__video
+      left: -40px
+  .webinar__questions
+    margin-left: 35px
+
+@media only screen and (max-width : 530px)
+
+  .wrapper-right-webinar-column
+    margin-right: 0
+
+  .webinar__date span
+    margin-left: 44px
+  .videoBlock__chat--passed .btn__video
+    left: -37px

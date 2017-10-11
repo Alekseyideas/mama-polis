@@ -1,0 +1,60 @@
+.free-webinar
+  padding-top: $section-padding-top
+  padding-bottom: 154px
+  background: url("../images/content/free-webinar/bg.jpg") no-repeat center / cover
+  z-index: 2
+  position: relative
+  &__video-text
+    margin-top: 87px
+  &__text
+    color: $gray
+    font-size: 24px
+    line-height: 36px
+    letter-spacing: -1.2px
+    max-width: 245px
+    padding-left: 4px
+  .videoBlock
+    margin: 9px 0 0 -7px
+
+  .title
+    margin-top: -7px
+  .before-line
+    &:before
+      left: -115px
+@media only screen and (max-width : 992px)
+  .free-webinar
+    &__video-text
+      margin-top: 20px
+
+    &__text
+      margin-bottom: 20px
+      max-width: 460px
+      font-size: 20px
+      line-height: 26px
+
+@media only screen and (max-width : 768px)
+
+  .free-webinar
+    padding: 40px 0
+    .btn__video
+      left: 0
+    .videoBlock-image
+      background: none
+      width: 80%
+      margin: auto
+      display: block
+      img
+        width: 100%
+        margin: auto
+
+@media only screen and (max-width : 400px)
+  .free-webinar
+    .videoBlock-image
+      width: 90%
+      margin-left: 40px
+    .btn__video
+      left: -20px
+@media only screen and (max-width : 320px)
+  .free-webinar__text
+    font-size: 14px
+    line-height: 16px
